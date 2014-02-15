@@ -10,7 +10,9 @@
 .vis {
   border: 1px solid black;
 }
-
+.path {
+  fill: steelblue;
+}
 .node text {
   font-size: 11px;
 }
@@ -92,11 +94,13 @@ function update(source) {
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })
-      .on("click", function(d) { toggle(d); update(d); });
+      .on("click", function(d) { toggle(d); update(d); })
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+      .on("click", function() {
+          d3.select(this).style("fill", "lightsteelblue");
+      });
 
   nodeEnter.append("svg:text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
@@ -112,7 +116,6 @@ function update(source) {
 
   nodeUpdate.select("circle")
       .attr("r", 4.5)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);

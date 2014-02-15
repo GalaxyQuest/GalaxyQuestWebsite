@@ -60,18 +60,25 @@ svg.selectAll('line')
   .attr('stroke-dasharray', (20,20))
   .attr('stroke', 'black');
 
-setInterval(function() {
-  currentIndex++;
+currentIndex++;
+var timer = setInterval(function() {
   if (currentIndex === alllines.length) {
     currentIndex = 0;
-  }
-  svg.selectAll('line')
-    .transition()
-      .attr('x1', alllines[currentIndex].x1)
-      .attr('y1', alllines[currentIndex].y1)
-      .attr('x2', alllines[currentIndex].x2)
-      .attr('y2', alllines[currentIndex].y2)
+    clearTimer();
+  } else {  
+    svg.selectAll('line')
+      .transition()
+        .attr('x1', alllines[currentIndex].x1)
+        .attr('y1', alllines[currentIndex].y1)
+        .attr('x2', alllines[currentIndex].x2)
+        .attr('y2', alllines[currentIndex].y2);
+
+      currentIndex++;
+  } 
 }, 1000);
 
+var clearTimer = function() {
+  clearInterval(timer);
+}
 
 

@@ -1,13 +1,180 @@
-<html>
-<head>
-  <title>MEAN boilerplate</title>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="scripts/app.js"></script>
-  <script src="scripts/controllers/main.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-</head>
-<body ng-app='testApp'>
-  <div ng-view></div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./../assets/ico/favicon.ico">
+
+    <title>A Visual Guide to Machine Learning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./styles/bootstrapDist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/index.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Galaxy Classification Example</a></li>
+                <li><a href="#contact">The Team</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithms <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Classifiers</li>
+                    <li><a href="#">Naive Bayes</a></li>
+                    <li><a href="#">Random Forests</a></li>
+                    <li><a href="#">Neural Networks</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Regression</li>
+                    <li><a href="#">Regression Analysis</a></li>
+                    <li><a href="#">Error Terms</a></li>
+                    <li class="divider"></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Machine Learning Algorithms</h1>
+              <a class="btn btn-lg btn-primary" href="#" role="button">View Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="http://mesosyn.com/galaxy-1.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Galaxy Zoo Competition</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Our Team</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Galaxy Morphology Use Case <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Image of galaxy and information about this example</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>      
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Algorithms <span class="text-muted">See for yourself.</span></h2>
+        </div>
+          <p class="lead">Faded image of a visualized algorithm, clicking details leads to our algorithm page</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">The Team <span class="text-muted">Checkmate</span></h2>
+          <p class="lead">Our Bios/Blogs</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Hack Reactor Inc &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./styles/bootstrapDist/js/bootstrap.min.js"></script>
+    <script src="./styles/bootstrapIndexAssets-js/docs.min.js"></script>
+  </body>
 </html>

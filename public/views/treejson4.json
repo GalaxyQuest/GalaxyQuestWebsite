@@ -1,0 +1,27 @@
+{
+    "name": "Does it look like a spiral galaxy?",
+    "children": [
+    {
+        "name": "yes",
+        "children": [
+         {"name" : "edge first?", "children": [
+            {"name": "4"},
+            {"name": "5"}
+         ]},
+         {"name": "full view?", "children": [
+            {"name": "6","children": [
+                {"name": "10"},
+                {"name": "34"}
+            ]},
+            {"name": "7","children": [
+                {"name": "84"},
+                {"name": "36"}
+            ]}
+         ]}
+        ]
+    },
+    {
+        "name": "no"
+    }
+    ]
+}

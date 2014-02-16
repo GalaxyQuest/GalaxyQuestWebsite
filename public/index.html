@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="galaxyApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,23 +40,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="#">Galaxy Quest</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">Galaxy Classification Example</a></li>
-                <li><a href="#contact">The Team</a></li>
+                <li><a href="#/about">Galaxy Classification Example</a></li>
+                <li><a href="#/contact">The Team</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithms <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Classifiers</li>
                     <li><a href="#">Naive Bayes</a></li>
-                    <li><a href="#">Random Forests</a></li>
-                    <li><a href="#">Neural Networks</a></li>
+                    <li><a href="#/randomforest">Random Forests</a></li>
+                    <li><a href="#/neuralnet">Neural Networks</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Regression</li>
-                    <li><a href="#">Regression Analysis</a></li>
+                    <li><a href="#/scatter">Regression Analysis</a></li>
                     <li><a href="#">Error Terms</a></li>
                     <li class="divider"></li>
 
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="item">
-          <img data-src="http://mesosyn.com/galaxy-1.jpg">
+          <img src="http://mesosyn.com/galaxy-1.jpg">
           <div class="container">
             <div class="carousel-caption">
               <h1>Galaxy Zoo Competition</h1>
@@ -113,53 +113,9 @@
     </div><!-- /.carousel -->
 
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Galaxy Morphology Use Case <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Image of galaxy and information about this example</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>      
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Algorithms <span class="text-muted">See for yourself.</span></h2>
-        </div>
-          <p class="lead">Faded image of a visualized algorithm, clicking details leads to our algorithm page</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">The Team <span class="text-muted">Checkmate</span></h2>
-          <p class="lead">Our Bios/Blogs</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
+    <div id='container'>
+      <div ng-view></div>
+    </div>
 
       <!-- FOOTER -->
       <footer>
@@ -176,5 +132,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./styles/bootstrapDist/js/bootstrap.min.js"></script>
     <script src="./styles/bootstrapIndexAssets-js/docs.min.js"></script>
+    <script src='/bower_components/angular/angular.js'></script>
+    <script src='/bower_components/angular-route/angular-route.js'></script>
+    <script src='/scripts/app.js'></script>
+    <script src='/scripts/controllers/main.js'></script>
   </body>
 </html>

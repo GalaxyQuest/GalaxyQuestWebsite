@@ -5,10 +5,7 @@
         "name": "yes",
         "children": [
          {"name" : "edge first?", "children": [
-            {"name": "4", "children": [
-                {"name": "8"},
-                {"name": "9"}
-            ]},
+            {"name": "4"},
             {"name": "5"}
          ]},
          {"name": "full view?", "children": [

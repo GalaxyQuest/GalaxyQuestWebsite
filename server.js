@@ -15,6 +15,8 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+// app.engine('.html', require('jade').__express);
+// app.set('view engine', 'html');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
@@ -29,6 +31,14 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//routes
+app.get('/', routes.index);
+// app.get('/scatter', routes.scatter);
+// app.get('/partials/:name', routes.partials);
+app.get('*', routes.index);
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Magic happens on port ' + app.get('port'));
 });
+
+

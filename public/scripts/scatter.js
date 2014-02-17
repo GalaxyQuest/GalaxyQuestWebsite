@@ -16,7 +16,7 @@ var dataq1 = d3.range(fvectors/classes+10)
 var dataq2 = d3.range(fvectors/classes+1,fvectors/classes*2+10)
 var dataq3 = d3.range(fvectors/classes*2+11,fvectors/classes*4)
 // var dataq4 = d3.range(fvectors/classes)
-console.log(dataq1.concat(dataq2))
+// console.log(dataq1.concat(dataq2))
 
 svg.selectAll('circle')
   .data(dataq1)

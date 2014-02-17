@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../styles/bootstrapDist/js/bootstrap.min.js"></script>
+    <script src="../styles/bootstrapIndexAssets-js/docs.min.js"></script>
+    <script src='../bower_components/angular/angular.js'></script>
+    <script src='../bower_components/angular-route/angular-route.js'></script>
+    <script src='../scripts/app.js'></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <link rel="shortcut icon" href="./../assets/ico/favicon.ico">
+    <link rel='stylesheet' href="../styles/bootstrapDist/css/bootstrap.min.css" >
+    <link href="../styles/index.css" rel="stylesheet">
+
+    <title>A Visual Guide to Machine Learning</title>
+
+  </head>
+
+  <body ng-app='galaxyApp' ng-controller='FrameController'>
+
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Galaxy Quest</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/galaxyclass">Galaxy Classification Example</a></li>
+                <li><a href="/contact">The Team</a></li>
+                <li><a href='/algorithms'>Algorithms</a><li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+    <div id="container">
+      <div ng-view></div>
+    </div>
+
+  </body>
+</html>

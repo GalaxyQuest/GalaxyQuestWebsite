@@ -27,6 +27,10 @@ angular.module('galaxyApp', ['ngRoute'])
         templateUrl: '../views/partials/randomForests.html',
         controller: 'RandomForestsController'
       })
+      .when('/neuralNet', {
+        templateUrl: '../views/partials/neuralnet.html',
+        controller: 'NeuralNetController'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -48,7 +52,7 @@ angular.module('galaxyApp', ['ngRoute'])
   })
   .controller('RandomForestsController', function($scope) {
   })
-  .directive("coffee", function() {
+  .directive("randomForest", function() {
 
   var d3svg = function(scope, element, attributes) {
 

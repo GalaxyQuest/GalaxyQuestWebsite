@@ -1,0 +1,63 @@
+<html ng-controller='ScatterController'>
+<head>
+</head>
+
+<style>
+body {
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+svg {
+  border: 5px solid red;
+}
+
+.class1 {
+  fill: red;
+}
+
+.class2 {
+  fill: blue;
+}
+
+.class3 {
+  fill: green;
+}
+
+</style>
+
+<body>
+
+  <div class='container scatter'>
+    <h1> Toy Learning Problem </h1>
+    <p> Assume that we have 3 classes shown in red, blue, and green.</p>
+    <p> The features vectors are the x,y coordinates where v = [x,y]T</p>
+    <p> Split lines have the parameters a,b so that fn(v) = ax +by</p>
+
+  </div>
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="../../scripts/scatter.js"></script>
+  <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>
+  <script src="../../styles/bootstrapIndexAssets-js/docs.min.js"></script>
+
+</body>
+</html>

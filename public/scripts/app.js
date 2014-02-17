@@ -7,22 +7,22 @@ angular.module('galaxyApp', ['ngRoute'])
         templateUrl: '../views/mainindex.html',
         controller: 'FrameController'
       })
-      // .when('/galaxyclass', {
-      //   templateUrl: '../views/partials/galaxyclass.html',
-      //   controller: 'GalaxyClassController'
-      // })
-      // .when('/contact', {
-      //   templateUrl: '../views/partials/contact.html',
-      //   controller: 'ContactController'
-      // })      
+      .when('/galaxyclass', {
+        templateUrl: '../views/partials/galaxyclass.html',
+        controller: 'GalaxyClassController'
+      })
+      .when('/contact', {
+        templateUrl: '../views/partials/contact.html',
+        controller: 'ContactController'
+      })      
       .when('/algorithms', {
+        templateUrl: '../views/partials/algorithms.html',
+        controller: 'AlgorithmsController'
+      })      
+      .when('/scatter', {
         templateUrl: '../views/partials/scatter.html',
         controller: 'ScatterController'
-      })      
-      // .when('/scatter', {
-      //   templateUrl: '../views/partials/scatter.html',
-      //   controller: 'ScatterController'
-      // })
+      })
       .otherwise({
         redirectTo: '/'
       });

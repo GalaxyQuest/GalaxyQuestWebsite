@@ -7,6 +7,9 @@ body {
   color: #5a5a5a;
 }
 
+.col-lg-4 {
+  text-align: center;
+}
 
 
 /* CUSTOMIZE THE NAVBAR

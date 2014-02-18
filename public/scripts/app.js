@@ -23,6 +23,10 @@ angular.module('galaxyApp', ['ngRoute'])
         templateUrl: '../views/partials/scatter.html',
         controller: 'ScatterController'
       })
+      .when('/mlintro', {
+        templateUrl: '../views/partials/mlintro.html',
+        controller: 'MLIntroController'
+      })
       .when('/randomForests', {
         templateUrl: '../views/partials/randomForests.html',
         controller: 'RandomForestsController'
@@ -47,6 +51,8 @@ angular.module('galaxyApp', ['ngRoute'])
   .controller('AlgorithmsController', function($scope) {
   })
   .controller('ScatterController', function($scope) {
+  })
+  .controller('MLIntroController', function($scope) {
   })
   .controller('NeuralNetController', function($scope) {
   })

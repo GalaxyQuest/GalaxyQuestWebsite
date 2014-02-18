@@ -1,3 +1,9 @@
+<style>
+svg {
+  border: 5px solid black;
+}
+</style>
+
 <div class="container mlintro" ng-controller='MLIntroController'>
 
   <div class="row featurette">
@@ -20,10 +26,13 @@
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Regression <span class="text-muted">Predicting a continuous valued output</span></h2>
-      <p class="lead">Some Text Here and a picture of regression</p>
+      <p class="lead">The data we know (the data points shown to the right) is modeled so that unknown model parameters can be estimated.  Click on "Find Linear Regression" to see how we can best fit the data with a linear function.</p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+      <div class='regression'>
+      </div>
+      <button ng-click='drawLine()'>Find Linear Regression</button><button ng-click='clearLine()'>Clear</button>
     </div>
   </div>      
 
@@ -31,12 +40,15 @@
 
   <div class="row featurette">
     <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+      <div class='classification'>
+      </div>
+      <button ng-click='classify()'>Classify Data</button> <button ng-click='clearClassify()'>Clear</button>
     </div>
     <div class="col-md-7">
       <h2 class="featurette-heading">Classification <span class="text-muted">Predicting a discrete valued output</span></h2>
     </div>
-      <p class="lead">Some Text Here and a picture of classification</p>
+      <p class="lead">  Classification divides the data we know (the data points shown to the left) into discrete categories by separating the data with a straight line.  Unknown model parameters will be estimated to be in the category on that side of the line.  Click on "Classify Data" to see the line which best divides the data. </p>
   </div>
 
   <hr class="featurette-divider">
@@ -57,4 +69,8 @@
 
 <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>
 <script src="../../styles/bootstrapIndexAssets-js/docs.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="../../scripts/regression.js"></script>
+<script src="../../scripts/classification.js"></script>
+
 

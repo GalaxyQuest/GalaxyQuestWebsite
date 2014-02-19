@@ -33,8 +33,6 @@ if ('development' == app.get('env')) {
 
 //routes
 app.get('/', routes.index);
-// app.get('/scatter', routes.scatter);
-// app.get('/partials/:name', routes.partials);
 app.get('*', routes.index);
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -2,6 +2,21 @@
 svg {
   border: 5px solid black;
 }
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.regression {
+  font: 10px sans-serif;
+}
+
 </style>
 
 <div class="container mlintro" ng-controller='MLIntroController'>
@@ -26,13 +41,22 @@ svg {
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Regression <span class="text-muted">Predicting a continuous valued output</span></h2>
-      <p class="lead">The data we know (the data points shown to the right) is modeled so that unknown model parameters can be estimated.  Click on "Find Linear Regression" to see how we can best fit the data with a linear function.</p>
+      <p class="lead">Observed data is modeled so that outputs for unobserved inputs can be estimated.  </p>
+      <p class='lead'>Example: Housing Prices in Portland, Oregon<br>
+      <i>Input Variable / Feature</i> (x-axis) - Size in Square Feet<br>
+      <i>Output Variable / Target</i> (y-axis) - Price in $1000s<br>
+      With linear regression, we model the data with a straight line and then use that line to predict outputs for new inputs  
+      </p>
+      <p>
+      Click on "Find Linear Regression" to see how we can best fit the data with a linear function.<br>
+      Click on "Predict New Data Output" to see how we use the linear regression model. 
+      </p>
     </div>
     <div class="col-md-5">
       <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
       <div class='regression'>
       </div>
-      <button ng-click='drawLine()'>Find Linear Regression</button><button ng-click='clearLine()'>Clear</button>
+      <button ng-click='drawLine()'>Find Linear Regression</button> <button ng-click='predictData()'>Predict New Data Output</button> <button ng-click='clearLine()'>Clear</button>
     </div>
   </div>      
 
@@ -43,23 +67,41 @@ svg {
       <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
       <div class='classification'>
       </div>
-      <button ng-click='classify()'>Classify Data</button> <button ng-click='clearClassify()'>Clear</button>
+      <button ng-click='classify()'>Classify Data</button> <button ng-click='predictClass()'>Predict Class</button> <button ng-click='clearClassify()'>Clear</button>
     </div>
     <div class="col-md-7">
       <h2 class="featurette-heading">Classification <span class="text-muted">Predicting a discrete valued output</span></h2>
     </div>
-      <p class="lead">  Classification divides the data we know (the data points shown to the left) into discrete categories by separating the data with a straight line.  Unknown model parameters will be estimated to be in the category on that side of the line.  Click on "Classify Data" to see the line which best divides the data. </p>
+      <p class="lead">Observed data is modeled so that unobserved data can be classified.  </p>
+      <p class='lead'>Example: Cancer<br>
+      <i>2 Features</i> - Tumor Size and Age of Patient<br>
+      <i>2 Classes</i> - Benign and Malignant<br>
+      With classification, we model the observed data to predict the class of new data based on which class the features of new data most closely resemble.
+      </p>
+      <p>
+      Click on "Classify Data" to see how we can best fit the data into two classes.<br>
+      Click on "Predict Class" to see how we use this model to predict to which class the new data belongs. 
+      </p>
   </div>
 
   <hr class="featurette-divider">
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Training <span class="text-muted">Some text</span></h2>
-      <p class="lead">Some Text Here and a diagram of training</p>
+      <h2 class="featurette-heading">Training <span class="text-muted">Process</span></h2>
+      <p class="lead">Training a supervised machine learning algorithm involves the following iterative process: <br>
+        Collecting Data: We need data both for training and for testing the algorithm.<br>
+        Feature Choice and Model Choice: The characteristics of the data affect the features and model used.<br>
+        Training: Using the known labels for the observed data so that the algorithm learns how to model the data.<br>
+        Evaluation: To evaluate the performace of the algorithm and to go back to any one of the previous stages to enhance this performance.<br>
+      </p>
+      <p class="lead">
+        The model created from the training process is then used to predict labels on new data.
+      </p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <img class="featurette-image img-responsive" src="../../images/supervised-classification.png" alt="Generic placeholder image">
+      <a href="http://www.nltk.org/book/ch06.html">Image Source: Python Natural Language Toolkit (NLTK) documentation</a>
     </div>
   </div>      
 

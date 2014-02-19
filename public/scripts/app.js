@@ -144,12 +144,12 @@ angular.module('galaxyApp', ['ngRoute'])
               root = json;
               root.x0 = h / 2;
               root.y0 = 0;
-              function toggleAll(d) {
-                if (d.children) {
-                  d.children.forEach(toggleAll);
-                  toggle(d);
-                }
-              }
+              // function toggleAll(d) {
+              //   toggle(d);
+              //   if (d.children) {
+              //     d.children.forEach(toggleAll);
+              //   }
+              // }
 
               // Initialize the display to show a few nodes.
               // root.children.forEach(toggleAll);

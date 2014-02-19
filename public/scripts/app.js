@@ -75,7 +75,7 @@ angular.module('galaxyApp', ['ngRoute'])
         .attr({'class': 'newdatapoint'})
         .attr('x', 50)
         .attr('y', 23)
-        .text('new data');
+        .text('new data - predicted $175k');
 
       svgreg.append('circle')
         .attr({'r': 5, 'class': 'newdatapoint'})

@@ -137,28 +137,19 @@ angular.module('galaxyApp', ['ngRoute'])
                 .append("svg:g")
                 .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
             
-            var treeinfo = ["../views/treejson.json", "../views/treejson2.json","../views/treejson3.json", "../views/treejson4.json"]; 
-            var pick = Math.floor(Math.random() * treeinfo.length);
-            console.log(treeinfo[pick])
-            d3.json(treeinfo[pick], function(json) {
-              root = json;
-              root.x0 = h / 2;
-              root.y0 = 0;
-              // function toggleAll(d) {
-              //   toggle(d);
-              //   if (d.children) {
-              //     d.children.forEach(toggleAll);
-              //   }
-              // }
-
-              // Initialize the display to show a few nodes.
-              // root.children.forEach(toggleAll);
-              // toggle(root.children[1]);
-              // // toggle(root.children[9]);
-              // // toggle(root.children[9].children[0]);
-
-              update(root);
-            });
+            // var treeinfo = ["../views/treejson.json", "../views/treejson2.json","../views/treejson3.json", "../views/treejson4.json"]; 
+            // var pick = Math.floor(Math.random() * treeinfo.length);
+            // console.log(treeinfo[pick])
+            // d3.json(treeinfo[pick], function(json) {
+            //   root = json;
+            //   root.x0 = h / 2;
+            //   root.y0 = 0;
+            //   update(root);
+            // });
+            root = buildTree(16);
+            root.x0 = h/2;
+            root.y0 = 0;
+            update(root);
 
             function update(source) {
               var duration = d3.event && d3.event.altKey ? 5000 : 500;

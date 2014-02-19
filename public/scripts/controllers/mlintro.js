@@ -51,6 +51,7 @@ angular.module('galaxyApp')
         .attr('stroke', 'green');
 
     };
+
     $scope.clearLine = function() {
       svgreg.selectAll('line')
         .data([])
@@ -63,6 +64,7 @@ angular.module('galaxyApp')
         .remove();
 
     };
+    
     $scope.classify = function() {
       svgclass.append('line')
         .data([1])

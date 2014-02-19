@@ -79,7 +79,7 @@ svg {
       With classification, we model the observed data to predict the class of new data based on which class the features of new data most closely resemble.
       </p>
       <p>
-      Click on "Classify Data" to see how we can best fit the data into two classes.<br>
+      Click on "Classify Data" to see how we can best fit the data into two generalizable classes.<br>
       Click on "Predict Class" to see how we use this model to predict to which class the new data belongs. 
       </p>
   </div>
@@ -88,12 +88,12 @@ svg {
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Training <span class="text-muted">Process</span></h2>
+      <h2 class="featurette-heading">Training Process <span class="text-muted">Classification</span></h2>
       <p class="lead">Training a supervised machine learning algorithm involves the following iterative process: <br>
-        Collecting Data: We need data both for training and for testing the algorithm.<br>
+        Collecting Data: Data is needed for both training and testing the algorithm.<br>
         Feature Choice and Model Choice: The characteristics of the data affect the features and model used.<br>
-        Training: Using the known labels for the observed data so that the algorithm learns how to model the data.<br>
-        Evaluation: To evaluate the performace of the algorithm and to go back to any one of the previous stages to enhance this performance.<br>
+        Training: The known labels for observed data are provided for the algorithm to learn how to model the data.<br>
+        Evaluation: The performace of the algorithm is evaluated.  The process can restart at any one of the previous stages to enhance this performance.<br>
       </p>
       <p class="lead">
         The model created from the training process is then used to predict labels on new data.
@@ -106,12 +106,13 @@ svg {
   </div>      
 
 
-
+  <p>A thank you to <a href="https://www.coursera.org/course/ml">Andrew Ng's Coursera course on Machine Learning</a> for the examples.</p>
 </div>
 
 <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>
 <script src="../../styles/bootstrapIndexAssets-js/docs.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="../../scripts/controllers/mlintro.js"></script>
 <script src="../../scripts/regression.js"></script>
 <script src="../../scripts/classification.js"></script>
 

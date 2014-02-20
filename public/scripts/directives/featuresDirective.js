@@ -1,6 +1,7 @@
 galaxyApp.directive('features', function(){
   var appendFeatures = function($scope, $element, $attributes){
-    viz.append('svg')
+    var svg = d3.select($element[0])
+      .append('svg')
       .attr('width', 50)
       .attr('height', 50)
       .append('svg:g');
@@ -33,8 +34,10 @@ galaxyApp.directive('features', function(){
 
   var move = function(){
     var selected = d3.selectAll('.selected')[0];
-    selected.transition()
-      .attr()
+    for (var i = 0; i < selected.length; i++) {
+      selected[i].transition()
+        .attr()
+    };
     console.log('selected: ', selected)
   }
 

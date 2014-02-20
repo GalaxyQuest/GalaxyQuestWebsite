@@ -31,26 +31,13 @@ path.link {
 </head>
 
 <body ng-app="galaxyApp">
-  <br><br><br><br>
-  <div>
-    <features></features>
-  </div>
-  <p> Select a number to display trees </p>
-
-  <select ng-model= "number">
-    <option value="1" selected="selected">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    </select>
-  <p>{{number}} random trees showing</p>  <div>
+  <br/><br/><br/><br/>
+  <visualization>
+    <features>
+      All machine learning algorithms take inputs that describe the data we are trying to analyze. These descriptors are often called input "features". A random forest learning algorithm will take a random sampling of the features and feed them into a decision tree:
+      <br/>
+    </features>
+    <br/>
     <random-forest></random-forest>
-  </div>
-
+  </visualization>
 </body>

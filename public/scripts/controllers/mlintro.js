@@ -1,5 +1,4 @@
-angular.module('galaxyApp') 
-  .controller('MLIntroController', function($scope) {
+galaxyApp.controller('MLIntroController', function($scope) {
     $scope.drawLine = function() {
       svgreg.append('line')
         .data([1])

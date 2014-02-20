@@ -32,7 +32,10 @@ path.link {
 
 <body ng-app="galaxyApp">
   <br><br><br><br>
-  <p> Selected a number to display trees </p>
+  <div>
+    <features></features>
+  </div>
+  <p> Select a number to display trees </p>
 
   <select ng-model= "number">
     <option value="1" selected="selected">1</option>
@@ -46,11 +49,7 @@ path.link {
     <option value="9">9</option>
     <option value="10">10</option>
     </select>
-  <p>{{number}} random trees showing</p>
-  <div>
-    <features></features>
-  </div>
-  <div>
+  <p>{{number}} random trees showing</p>  <div>
     <random-forest></random-forest>
   </div>
 

@@ -54,5 +54,3 @@ var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
   })
   .controller('RandomForestsController', function($scope) {
   })
-  // .directive("randomForest", randomForestsDirective)
-  // .directive('features', featuresDirective;

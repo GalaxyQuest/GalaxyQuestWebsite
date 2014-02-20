@@ -33,8 +33,10 @@ galaxyApp.directive('features', function(){
 
   var move = function(){
     var selected = d3.selectAll('.selected')[0];
-    selected.transition()
-      .attr()
+    for (var i = 0; i < selected.length; i++) {
+      selected[i].transition()
+        .attr()
+    };
     console.log('selected: ', selected)
   }
 

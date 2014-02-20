@@ -88,17 +88,42 @@ svg {
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding The Parameters</span></h2>
-      <p class="lead">
+      <h2 class="featurette-heading">The Hypothesis <span class="text-muted">Finding a Line to Fit the Data </span></h2>
+      <p class="lead">The learning algorithm uses the training data as input and outputs a function (called the hypothesis).  
+      </p>
+      <p class="lead">Example: Linear Regression with One Variable and Housing Prices in Oregon<br>
+        The hypothesis takes in as input the size-of-house feature and outputs an estimated target value for the price.
       </p>
       <p class="lead">
+        We represent this hypothesis as a linear function in this example:<br>
+        h<sub align='right'>&theta;</sub>(x) = &theta;<sub align='right'>0</sub> + &theta;<sub algin='right'>1</sub>x
       </p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <img class="featurette-image img-responsive" src="../../images/hypothesis.png">
+
+      <!-- <div class='hypothesis'> -->
+      <!-- </div> -->
     </div>
   </div>      
 
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <!-- <div class='costfunction'> -->
+      <!-- </div> -->
+    </div>
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding the Right Parameters</span></h2>
+    </div>
+      <p class="lead">The cost function helps us figure out how to fit the best possible straight line to our data.  We need to find the right parameters (&theta;<sub align='right'>0</sub> and &theta;<sub algin='right'>1</sub> are the parameters in our hypothesis  h<sub align='right'>&theta;</sub>(x) = &theta;<sub align='right'>0</sub> + &theta;<sub algin='right'>1</sub>x) 
+      </p>
+      <p class="lead">Example: Linear Regression
+      </p>
+  </div>
 
   <hr class="featurette-divider">
 
@@ -130,5 +155,6 @@ svg {
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="../../scripts/regression.js"></script>
 <script src="../../scripts/classification.js"></script>
+<script src="../../scripts/hypothesis.js"></script>
 
 

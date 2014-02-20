@@ -17,9 +17,9 @@ galaxyApp.directive("randomForest", function() {
       var vis = d3.select(element[0]).append("svg")
       .attr("width", w)
       .attr("height", h)
+      .attr("class", "tree")
       .append("svg:g")
-      .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
-      .attr("class", "tree");
+      .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
       root = buildTree(nodeCount);
       root.x0 = h/2;
@@ -121,14 +121,9 @@ galaxyApp.directive("randomForest", function() {
         }
       }
     }
-
-    scope.$watch("number", function() {
-      d3.selectAll(".tree")
-      .remove()
-      for(var i = 0; i < scope.number; i++) {
-        scope.$apply(makeD3Tree(11));
-      }
-    }, true);
+    for(var i = 0; i < 6; i++) {
+      makeD3Tree(11);
+    }
   };
 
   return {

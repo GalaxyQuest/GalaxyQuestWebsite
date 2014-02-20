@@ -1,5 +1,4 @@
-console.log("RANDO!");
-var randomForestsDirective = function() {
+galaxyApp.directive("randomForest", function() {
   var d3svg = function(scope, element, attributes) {
     var number = scope.number;
     var makeD3Tree = function(nodeCount) {
@@ -19,7 +18,8 @@ var randomForestsDirective = function() {
       .attr("width", w)
       .attr("height", h)
       .append("svg:g")
-      .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+      .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
+      .attr("class", "tree");
 
       root = buildTree(nodeCount);
       root.x0 = h/2;
@@ -123,10 +123,10 @@ var randomForestsDirective = function() {
     }
 
     scope.$watch("number", function() {
-      d3.selectAll("svg")
+      d3.selectAll(".tree")
       .remove()
       for(var i = 0; i < scope.number; i++) {
-        makeD3Tree(11);
+        scope.$apply(makeD3Tree(11));
       }
     }, true);
   };
@@ -135,4 +135,4 @@ var randomForestsDirective = function() {
     restrict: "E",
     link: d3svg
   }
-}
+});

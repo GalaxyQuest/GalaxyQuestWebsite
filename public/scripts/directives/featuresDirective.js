@@ -1,0 +1,3 @@
+galaxyApp.directive('featuresDirective', function(){
+
+})

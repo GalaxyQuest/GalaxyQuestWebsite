@@ -25,9 +25,7 @@ var buildTree = function(nodeCount){
   nodeCount--;
   var innerFun = function(tree){
     var leftCount = randomOdd(nodeCount-1);
-    console.log('left:',leftCount);
     var rightCount = nodeCount-leftCount;
-    console.log('right',rightCount);
     leftCount > 0 && tree.addChild(buildTree(leftCount));
     rightCount > 0 && tree.addChild(buildTree(rightCount));
   };

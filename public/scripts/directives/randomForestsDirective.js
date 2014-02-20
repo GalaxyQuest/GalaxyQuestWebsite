@@ -1,4 +1,4 @@
-var randomForestsDirective = function() {
+galaxyApp.directive("randomForest", function() {
   var d3svg = function(scope, element, attributes) {
     var number = scope.number;
     var makeD3Tree = function(nodeCount) {
@@ -135,4 +135,4 @@ var randomForestsDirective = function() {
     restrict: "E",
     link: d3svg
   }
-}
+});

@@ -1,4 +1,4 @@
-angular.module('galaxyApp', ['ngRoute'])
+var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
   .config(function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
@@ -38,7 +38,6 @@ angular.module('galaxyApp', ['ngRoute'])
         redirectTo: '/'
       });
   })
-
   .controller('FrameController', function($scope) {
   })
   .controller('MainController', function($scope) {
@@ -55,7 +54,7 @@ angular.module('galaxyApp', ['ngRoute'])
   })
   .controller('RandomForestsController', function($scope) {
   })
-  .directive("randomForest", randomForestsDirective)
+  // .directive("randomForest", randomForestsDirective)
   .directive('features', function(){
     return {
       restrict: 'E',

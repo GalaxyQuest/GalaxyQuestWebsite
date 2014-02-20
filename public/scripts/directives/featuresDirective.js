@@ -12,23 +12,20 @@ galaxyApp.directive('features', function(){
       .attr('class', 'feature')
       .style('fill', 'white')
       .style('stroke', 'black')
-      .style('stroke-width', 1);
-    svg.append('image')
-      .attr('height', 50)
-      .attr('width', 50)
-      .attr('href', '../../images/pinkie_pie.png')
+      .style('stroke-width', 1)
+      .style("fill", "url(#image)");
   };
 
   var randomlySelect = function(){
     var features = d3.selectAll('.feature')[0];
+    console.log(Math.sqrt(features.length))
     for (var i = 0; i < Math.sqrt(features.length); i++) {
       var randomIndex = Math.floor(Math.random()*features.length-1);
       var feature = d3.select(features[randomIndex]);
-      feature.style('fill', 'white');
-      feature.transition()
-        .duration(300)
-        .style('fill', 'red')
-        .attr('class', 'selected');
+      feature.style('fill', 'white')
+              .transition().duration(300)
+              .style('fill', 'red')
+              .attr('class', 'selected');
     };
   };
 

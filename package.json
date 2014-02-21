@@ -1,13 +1,18 @@
 {
+  "main" : "server.js",
   "name": "MEAN-basic-boilerplate",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+  "start": "node app.js"
   },
   "dependencies": {
     "express": "3.4.8",
     "jade": "*",
-    "mongoose": "~3.8.7"
+    "mongoose": "~3.8.7",
+    "bower" : "~1.2.8"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }

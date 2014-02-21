@@ -13,10 +13,6 @@ galaxyApp.directive('features', function(){
       .style('fill', 'white')
       .style('stroke', 'black')
       .style('stroke-width', 1);
-    svg.append('image')
-      .attr('height', 50)
-      .attr('width', 50)
-      .attr('href', '../../images/pinkie_pie.png')
   };
 
   var select = function(){

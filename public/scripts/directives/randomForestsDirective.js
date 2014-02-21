@@ -120,10 +120,33 @@ galaxyApp.directive("randomForest", function() {
           d._children = null;
         }
       }
-    }
-    for(var i = 0; i < 6; i++) {
+    };
+
+    var clearAllTrees = function(){
+      d3.select('.tree').transition().duration(2500).remove();
+    };
+
+    var makeNTrees = function(n){
+      console.log('TEST: ', n);
+      if(n===0){
+        clearAllTrees();
+        makeNTrees(1);
+        return;
+      }
+      setTimeout(function(){
+        makeD3Tree(11);
+        makeNTrees(n-1);
+      },3000);
+    };
+
+    setTimeout(function(){
       makeD3Tree(11);
-    }
+      makeNTrees(2);
+    }, 1000);
+
+    // for(var i = 0; i < 6; i++) {
+    //   makeD3Tree(11);
+    // }
   };
 
   return {

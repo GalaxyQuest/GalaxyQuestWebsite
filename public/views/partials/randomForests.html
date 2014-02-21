@@ -34,10 +34,15 @@ path.link {
   <br/><br/><br/><br/>
   <visualization>
     <features>
-      All machine learning algorithms take inputs that describe the data we are trying to analyze. These descriptors are often called input "features". A random forest learning algorithm will take a random sampling of the features and feed them into a decision tree:
+      All machine learning algorithms take inputs that describe the data we are trying to analyze. These descriptors are often called input "features". A random forest learning algorithm will take a random sampling of the features given to it and feed them into a decision tree:
       <br/>
     </features>
     <br/>
-    <random-forest></random-forest>
+    <random-forest>
+      The number of trees made for our model is specified by the user. The first feature and solution set stimulates the creation of the full tree set(the random forest). Further feature/solution sets will refine this forest of decision trees to make more accurate predictions.
+      <br/>
+    </random-forest>
+    <br/>
+    Each trained decision tree alone is a weak estimator. This means that a single decision tree has little predictive power. When many (often thousands or more) of these weak estimators are used together, they become a surprisingly accurate predictor. This is done through a process called bootstrapped aggregation.
   </visualization>
 </body>

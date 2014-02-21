@@ -1,6 +1,5 @@
 galaxyApp.directive("randomForest", function() {
   var d3svg = function(scope, element, attributes) {
-    var number = scope.number;
     var makeD3Tree = function(nodeCount) {
       var m = [20, 120, 20, 0],
       w = window.innerWidth/3.5,
@@ -45,13 +44,6 @@ galaxyApp.directive("randomForest", function() {
       nodeEnter.append("svg:circle")
       .attr("r", 1e-6);
 
-      nodeEnter.append("svg:text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-      .attr("dy", ".35em")
-      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-      .text(function(d) { return d.name; })
-      .style("fill-opacity", 1e-6);
-
       // Transition nodes to their new position.
       var nodeUpdate = node.transition()
       .duration(duration)
@@ -59,21 +51,6 @@ galaxyApp.directive("randomForest", function() {
 
       nodeUpdate.select("circle")
       .attr("r", 4.5)
-
-      nodeUpdate.select("text")
-      .style("fill-opacity", 1);
-
-      // Transition exiting nodes to the parent's new position.
-      var nodeExit = node.exit().transition()
-      .duration(duration)
-      .attr("transform", function(d) { return "translate(" + root.x + "," + root.y + ")"; })
-      .remove();
-
-      nodeExit.select("circle")
-      .attr("r", 1e-6)
-
-      nodeExit.select("text")
-      .style("fill-opacity", 1e-6);
 
       // Update the links…
       var link = vis.selectAll("path.link")
@@ -94,42 +71,17 @@ galaxyApp.directive("randomForest", function() {
       link.transition()
       .duration(duration)
       .attr("d", diagonal);
-
-      // Transition exiting nodes to the parent's new position.
-      link.exit().transition()
-      .duration(duration)
-      .attr("d", function(d) {
-        var o = {x: root.x, y: root.y};
-        return diagonal({source: o, target: o});
-      })
-      .remove();
-
-      // Stash the old positions for transition.
-      nodes.forEach(function(d) {
-        d.x0 = d.x;
-        d.y0 = d.y;
-      });
-
-      // Toggle children.
-      function toggle(d) {
-        if (d.children) {
-          d._children = d.children;
-          d.children = null;
-        } else {
-          d.children = d._children;
-          d._children = null;
-        }
-      }
     };
 
-    var clearAllTrees = function(){
-      d3.select('.tree').transition().duration(2500).remove();
+    var removeFirstTree = function(){
+      d3.select('.tree').transition().duration(2500)
+      .style("opacity", "0")
+      .remove();
     };
 
     var makeNTrees = function(n){
-      console.log('TEST: ', n);
       if(n===0){
-        clearAllTrees();
+        removeFirstTree();
         makeNTrees(1);
         return;
       }
@@ -143,10 +95,6 @@ galaxyApp.directive("randomForest", function() {
       makeD3Tree(11);
       makeNTrees(2);
     }, 1000);
-
-    // for(var i = 0; i < 6; i++) {
-    //   makeD3Tree(11);
-    // }
   };
 
   return {

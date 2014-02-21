@@ -1,6 +1,7 @@
 galaxyApp.directive('features', function(){
   var appendFeatures = function($scope, $element, $attributes){
-    viz.append('svg')
+    var svg = d3.select($element[0])
+      .append('svg')
       .attr('width', 50)
       .attr('height', 50)
       .attr('class', 'feature')

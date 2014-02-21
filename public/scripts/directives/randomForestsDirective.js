@@ -31,7 +31,9 @@ galaxyApp.directive("randomForest", function() {
       var nodes = tree.nodes(root).reverse();
 
       // Normalize for fixed-depth.
-      nodes.forEach(function(d) { d.y = d.depth * 50; });
+      nodes.forEach(function(d) { 
+        d.y = d.depth * 50;
+      });
 
       // Update the nodes…
       var node = vis.selectAll("g.node")
@@ -43,13 +45,54 @@ galaxyApp.directive("randomForest", function() {
       .attr("transform", function(d) { return "translate(" + root.x0 + "," + root.y0 + ")"; });
 
       nodeEnter.append("svg:circle")
-      .attr("r", 1e-6);
+        .attr("r", 1e-6);
+
+      nodeEnter.select("circle")
+          .attr("r", 10)
+          .transition().delay(2000).duration(1000)
+            .style("fill", function(d){
+              if(d.depth === 0) {
+                return "url(#image2)"
+              }
+            });
+            setTimeout(function() {
+              nodeEnter.select("circle").transition().duration(300)
+                .style("fill", function(d){
+                  if(d.depth === 1) {
+                    return "url(#image2)"
+                  }
+                })
+              }, 5000)
+            setTimeout(function() {
+              nodeEnter.select("circle").transition().duration(300)
+                .style("fill", function(d){
+                  if(d.depth === 2) {
+                    return "url(#image2)"
+                  }
+                })
+              }, 7000)
+            setTimeout(function() {
+              nodeEnter.select("circle").transition().duration(300)
+                .style("fill", function(d){
+                  if(d.depth === 3) {
+                    return "url(#image2)"
+                  }
+                })
+              }, 9000)
+            setTimeout(function() {
+              nodeEnter.select("circle").transition().duration(1000)
+                .style("fill", function(d){
+                  if(d.depth === 4) {
+                    return "url(#image2)"
+                  }
+                })
+              }, 11000)
+
 
       nodeEnter.append("svg:text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-      .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 
       // Transition nodes to their new position.
@@ -57,11 +100,7 @@ galaxyApp.directive("randomForest", function() {
       .duration(duration)
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
-      nodeUpdate.select("circle")
-      .attr("r", 4.5)
 
-      nodeUpdate.select("text")
-      .style("fill-opacity", 1);
 
       // Transition exiting nodes to the parent's new position.
       var nodeExit = node.exit().transition()

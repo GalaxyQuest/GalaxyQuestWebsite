@@ -5,8 +5,8 @@
     <style>
 .node circle {
   cursor: pointer;
-  fill: #fff;
-  stroke: steelblue;
+/*  fill: url('#image2');
+*/  stroke: steelblue;
   stroke-width: 1.5px;
 }
 .vis {
@@ -31,6 +31,16 @@ path.link {
 </head>
 
 <body ng-app="galaxyApp">
+    <svg id="imgSVG" width="0" height="0">
+      <defs id="mdef">
+        <pattern id="image" x="0" y="0" height="40" width="40">
+          <image x="0" y="0" width="40" height="40" xlink:href="../../images/pinkie_pie.png"></image>
+        </pattern>
+        <pattern id="image2" x="0" y="0" height="20" width="20">
+          <image x="0" y="0" width="20" height="20" xlink:href="../../images/pinkie_pie.png"></image>
+        </pattern>
+  </defs>
+</svg>
   <br/><br/><br/><br/>
   <visualization>
     <features>

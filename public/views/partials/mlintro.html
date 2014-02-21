@@ -88,21 +88,43 @@ svg {
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding The Parameters</span></h2>
-      <p class="lead">
+      <h2 class="featurette-heading">The Hypothesis <span class="text-muted">Finding a Line to Fit the Data </span></h2>
+      <p class="lead">The learning algorithm uses the training data as input and outputs a function (called the hypothesis).  
+      </p>
+      <p class="lead">Example: Housing Prices in Oregon / Linear Regression<br>
+        The hypothesis takes in as input the size-of-house feature and outputs an estimated target value for the price.
       </p>
       <p class="lead">
+        We represent this hypothesis as a linear function in this example:<br>
+        <img class="featurette-image img-responsive" src="../../images/hypothesisfunction.png">
       </p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <img class="featurette-image img-responsive" src="../../images/hypothesisgraph.png">
+
+      <!-- <div class='hypothesis'> -->
+      <!-- </div> -->
     </div>
   </div>      
 
 
+  <hr class="featurette-divider">
 
-
-
+  <div class="row featurette">
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive" src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <!-- <div class='costfunction'> -->
+      <!-- </div> -->
+    </div>
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding the Right Parameters</span></h2>
+    </div>
+      <p class="lead">The cost function helps figure out how to fit the best possible straight line to our data by minimizing the parameters &theta;<sub align='right'>0</sub> and &theta;<sub algin='right'>1</sub> so that the hypothesis h<sub>&theta;</sub>(x) is as close as possible to the known output (y) for each observed input (from 1 to m) in the training data.
+      </p>
+      <p class="lead">The cost function (also known as the squared error function) looks like the following:<br>
+        <img class="featurette-image img-responsive" src="../../images/costfunction.png">
+      </p>
+  </div>
 
   <hr class="featurette-divider">
 
@@ -134,5 +156,6 @@ svg {
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="../../scripts/regression.js"></script>
 <script src="../../scripts/classification.js"></script>
+<script src="../../scripts/hypothesis.js"></script>
 
 

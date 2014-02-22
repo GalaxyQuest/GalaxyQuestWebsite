@@ -79,11 +79,22 @@ galaxyApp.directive("randomForest", function() {
       .remove();
     };
 
+
+  window.onblur = function() { window.blurred = true; };
+  window.onfocus = function() { window.blurred = false; };
+
     var makeNTrees = function(n){
       if(n===0){
-        removeFirstTree();
-        makeNTrees(1);
-        return;
+        if(window.blurred) {
+          window.clearTimeout();
+          return;
+        } 
+        if(!window.blurred) {
+          removeFirstTree();
+          makeNTrees(1);
+          return;
+        }
+        
       }
       setTimeout(function(){
         makeD3Tree(11);

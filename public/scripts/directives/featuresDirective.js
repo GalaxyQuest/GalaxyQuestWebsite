@@ -17,7 +17,7 @@ galaxyApp.directive('features', function(){
 
   var select = function(){
     setTimeout(function(){
-      var features = d3.selectAll('.feature circle')[0];
+      var features = d3.selectAll('.d3features circle')[0];
       var selected = [];
       for (var i = 0; i < Math.sqrt(features.length); i++) {
         var randomIndex = Math.floor(Math.random()*features.length-1);

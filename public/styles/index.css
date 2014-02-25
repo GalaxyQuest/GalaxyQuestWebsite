@@ -61,6 +61,12 @@ path.link {
 .d3features {
   width: 90%;
 }
+.chart {
+  height: 340px;
+  width: 400px;
+  border: 1px solid black;
+  padding: 15px;
+}
 
 
 

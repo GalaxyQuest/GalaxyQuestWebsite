@@ -46,7 +46,7 @@ body {
 
 path.link {
   fill: none;
-  stroke: #ccc;
+  stroke: #000;
   stroke-width: 1.5px;
 }
 .text {

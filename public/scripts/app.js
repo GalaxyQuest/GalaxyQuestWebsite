@@ -10,13 +10,13 @@ var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
         templateUrl: '../views/partials/galaxyclass.html',
         controller: 'GalaxyClassController'
       })
-      .when('/contact', {
-        templateUrl: '../views/partials/contact.html',
+      .when('/team', {
+        templateUrl: '../views/partials/team.html',
         controller: 'ContactController'
       })      
-      .when('/algorithms', {
-        templateUrl: '../views/partials/algorithms.html',
-        controller: 'AlgorithmsController'
+      .when('/theGuide', {
+        templateUrl: '../views/partials/theguide.html',
+        //controller: do we need something here?
       })      
       .when('/scatter', {
         templateUrl: '../views/partials/scatter.html',

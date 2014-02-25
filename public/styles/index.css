@@ -62,11 +62,24 @@ path.link {
   width: 90%;
 }
 .chart {
+  margin-top: 25px;
   height: 340px;
-  width: 400px;
   border: 1px solid black;
   padding: 15px;
 }
+
+.subNav {
+  text-align: center;
+}
+
+.subNav a {
+  padding: 15px;
+}
+
+.lead, .featurette-heading {
+  text-align: center;
+}
+
 
 
 
@@ -149,7 +162,7 @@ path.link {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */

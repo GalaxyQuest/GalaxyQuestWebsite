@@ -1,32 +1,20 @@
 <div class="container contact">
   <br><br><br><br><br>
  <div class="row">
-  <a ng-click="subPage='../views/partials/mlintro.html'">Overview</a> |
-  <a ng-click="subPage='../views/partials/dataExplaination.html'">Data</a> |
-  <a ng-click="subPage='../views/partials/randomForests.html'">Research</a> |
-  <a ng-click="subPage='../views/partials/iterationAndTesting.html'">1st Iteration/Testing</a> |
-  <a ng-click="subPage='../views/partials/improvingYourAlgorithm.html'">Improving your Algorithm</a><br/>
+  <div class="subNav">
+    <a ng-click="subPage='../views/partials/mlintro.html'">Overview</a> |
+    <a ng-click="subPage='../views/partials/dataExplaination.html'">Data</a> |
+    <a ng-click="subPage='../views/partials/randomForests.html'">Research</a> |
+    <a ng-click="subPage='../views/partials/iterationAndTesting.html'">1st Iteration/Testing</a> |
+    <a ng-click="subPage='../views/partials/improvingYourAlgorithm.html'">Improving your Algorithm</a>
+  </div>
 
   <div class = "feature">
     <div class="default">
       
     </div>
-    <ng-include src="subPage" [onload=""]></ng-include>
+    <ng-include src="subPage"></ng-include>
   </div>
-
-<!--   <div class='algo col-lg-4'>
-    <img class="img-circle" alt="140x140" src="../../images/machine-learning.jpg" style="width: 140px; height: 140px;">
-   <h2>Machine Learning</h2>
-    <p>A simple introduction to regression, classification, and training algorithms on data sets.</p>
-    <p><a class='btn btn-default' href='/mlintro' role='button'>View Details</a>
-  </div>
-  <div class='algo col-lg-4'>
-    <img class="img-circle" alt="140x140" src="../../images/Forest.jpg" style="width: 140px; height: 140px;">
-      <h2>Random Forests</h2>
-      <p>See an visualized example of how our Random Forest algorithm works</p>
-    <p><a class='btn btn-default' href='/randomForests' role='button'>View Details</a>
-  </div>
- --> 
   </div>
 </div>
 

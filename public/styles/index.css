@@ -14,6 +14,55 @@ body {
 .algo {
   margin-left: 10%;
 }
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.regression {
+  font: 10px sans-serif;
+}
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.vis {
+  border: 1px solid black;
+}
+.path {
+  fill: steelblue;
+}
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+.text {
+  width: 85%;
+  padding: 15px;
+}
+
+.content {
+  margin-top: 8%;
+}
+
+.d3features {
+  width: 90%;
+}
+
+
 
 
 /* CUSTOMIZE THE NAVBAR

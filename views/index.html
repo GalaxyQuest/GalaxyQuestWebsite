@@ -20,6 +20,7 @@
     <link rel='stylesheet' href="../styles/bootstrapDist/css/bootstrap.min.css" >
     <link href="../styles/index.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../bower_components/c3/c3.css">
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
 
     <title>A Visual Guide to Machine Learning</title>
@@ -27,36 +28,36 @@
   </head>
 
   <body ng-app='galaxyApp' ng-controller='FrameController'>
-
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Galaxy Quest</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href='/theGuide'>The Guide</a><li>
-                <li><a href="/team">The Team</a></li>
-                </li>
-              </ul>
+    <div class="total-wrapper">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Galaxy Quest</a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="/">Home</a></li>
+                  <li><a href='/theGuide'>The Guide</a><li>
+                  <li><a href="/team">The Team</a></li>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="container">
-      <div ng-view='  '></div>
+      <div id="container">
+        <div ng-view='  '></div>
+      </div>
     </div>
-
   </body>
 </html>

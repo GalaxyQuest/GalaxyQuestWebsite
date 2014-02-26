@@ -61,6 +61,30 @@ path.link {
 .d3features {
   width: 90%;
 }
+.chart {
+  margin-top: 25px;
+  height: 340px;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.subNav {
+  text-align: center;
+}
+
+.subNav a {
+  padding: 15px;
+}
+
+.lead, .featurette-heading {
+  text-align: center;
+}
+.carousel-caption{
+  text-shadow: 3px 3px 3px black;
+}
+.carousel-inner{
+  border-radius: 5px;
+}
 
 
 

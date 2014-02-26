@@ -74,38 +74,36 @@ galaxyApp.directive("randomForest", function() {
     };
 
     var removeFirstTree = function(){
-      d3.select('.tree').transition().duration(2500)
+      console.log('kill first tree')
+      d3.select('.tree').transition().duration(2000)
       .style("opacity", "0")
       .remove();
     };
 
-
-  window.onblur = function() { window.blurred = true; };
-  window.onfocus = function() { window.blurred = false; };
-
-    var makeNTrees = function(n){
-      if(n===0){
-        if(window.blurred) {
-          window.clearTimeout();
-          return;
-        } 
-        if(!window.blurred) {
-          removeFirstTree();
-          makeNTrees(1);
-          return;
-        }
-        
+    window.onblur = function() { 
+      if(currentTimeout !== -1){
+        window.clearTimeout(currentTimeout);
+        currentTimeout = -1;
       }
-      setTimeout(function(){
+    };
+    window.onfocus = function() {
+      treeCycle();
+    };
+    var currentTimeout = -1;
+    var treeCount = 0;
+    var treeCycle = function(){
+      if(treeCount >= 3){
+        removeFirstTree();
+        treeCount--;
+      }
+      currentTimeout = setTimeout(function(){
+        currentTimeout = -1;
         makeD3Tree(11);
-        makeNTrees(n-1);
+        treeCount++;
+        treeCycle();  
       },3000);
     };
-
-    setTimeout(function(){
-      makeD3Tree(11);
-      makeNTrees(2);
-    }, 1000);
+    treeCycle();
   };
 
   return {

@@ -44,7 +44,7 @@ galaxyApp.directive('features', function(){
       }
       select();
     }
-    ,2000);
+    ,1000);
   };
 
   var move = function(){

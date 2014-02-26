@@ -1,4 +1,4 @@
-<div class="container index" ng-controller='MainController'>
+<div class="container index" ng-controller='MainController' ng-app="galaxyApp">
   <div class="content">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=3000>
       <!-- Indicators -->
@@ -28,7 +28,8 @@
     <div class="content galaxyclass" ng-controller='GalaxyClassController'>
       <div class="row">
         <div class="col-md-5">
-          <img class="img-responsive img-rounded" src="../../images/galaxyExample1.jpg">
+          <img class="img-responsive img-rounded" ng-src="{{galaxyURL}}">
+          <div class="col-md-3 col-md-offset-4"> <button ng-click="nextGalaxy();" type="button" class="btn btn-primary">Next Galaxy</button> </div>
         </div>
         <div class="col-md-7">
           <div class="row">
@@ -45,17 +46,17 @@
                 </tr>
                 <tr >
                   <td style="vertical-align: middle;"><h4> Smooth </h4></td>
-                  <td style="vertical-align: middle;"><h4> 60 % </h4></td>
+                  <td style="vertical-align: middle;"><h4> {{class1_1}} % </h4></td>
                   <td style="vertical-align: middle;"> <img src="../../images/Smooth.png" /> </td>
                 </tr>
                 <tr>
                   <td style="vertical-align: middle;"><h4> Features or disk </h4></td>
-                  <td style="vertical-align: middle;"><h4> 20 % </h4></td>
+                  <td style="vertical-align: middle;"><h4> {{class1_2}} % </h4></td>
                   <td style="vertical-align: middle;"> <img src="../../images/FeaturesOrDisk.png" /> </td>
                 </tr>
                 <tr>
                   <td style="vertical-align: middle;"><h4> Star or artifact </h4></td>
-                  <td style="vertical-align: middle;"><h4> 20% </h4></td>
+                  <td style="vertical-align: middle;"><h4> {{class1_3}} % </h4></td>
                   <td style="vertical-align: middle;"> <img src="../../images/StarOrArtifcat.png" /> </td>
                 </tr>
                 <tr> </tr>

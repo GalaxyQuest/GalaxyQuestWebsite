@@ -5,7 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-image: url('../images/HUDF_s.jpg');
+  background-color: #ccc;
 }
 
 .col-lg-4 {
@@ -47,7 +47,7 @@ body {
 
 path.link {
   fill: none;
-  stroke: #ccc;
+  stroke: #000;
   stroke-width: 1.5px;
 }
 .text {
@@ -67,6 +67,8 @@ path.link {
   height: 340px;
   border: 1px solid black;
   padding: 15px;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .subNav {
@@ -86,8 +88,6 @@ path.link {
 .carousel-inner{
   border-radius: 5px;
 }
-
-
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -168,7 +168,7 @@ path.link {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */

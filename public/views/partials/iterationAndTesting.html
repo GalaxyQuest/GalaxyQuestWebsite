@@ -1,15 +1,34 @@
 <div>
   <div class="chapterTitle">
     <h2>Chapter 3: Building our 1st Machine and Test Flight</h2>
-    <h3>One sentence header on the chapter (non space themed)</h3>
   </div>
-  <div class="chapter">
-    Scribe your journey here, as we document our space quest
-  </div>
-  <div class="chapterTitle">
-    <h2>Our Learnings and Discovered Best Practices</h2>
-  </div>
-  <div class="chapter">
-    Scribe our learnings here, as we document for future space cadets
-  </div>
+<div class="row">
+
+  <h3 class="pull-right">Our heros set out taking their first pass at training a machine learning algorithm</h4><br><br><br><br>
+      <ul>
+        <li><h4 class="text-info">Iteration Based Implementation</h4>
+          <ul><li>Our heros, not knowing what features may work best, decided on an iterative (build and fix) model for machine learning. This methodology provided our heroes many advantages, including providing a high level view of our project before diving in too deep. We had gained some knowledge from a forum posting, <a href="http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/forums/t/6803/beating-the-benchmark">guiding our steps</a> </ul></li></li>
+        <li><h4 class="text-info">First Features</h4>
+          <ul><li>In implementing our initial features, our heros looked for an input set that could generate basic results, while minimizing the complexity of feature extraction and keeping a relatively small amount of inputs in order to minimize complications.</ul></li>
+        </li></li>
+        <li><h4 class="text-info">Using Your Data With Your Machine</h4>
+          <ul><li>While extracting the feature array from our machine, our team ran into many problems. We had found out that our inputs had to be comma separated values, and chose to save all our data in CSV files. Given that, we had to locate tools that would work with python in order to write to csv files. Furthermore, we had to read the image and change it into an array, so we had to find writers that were available to us and that were compatable with the other libraries we were using</li></ul></li>
+        <li><h4 class="text-info">Inperpreting Your Output</h4>
+          <ul><li>On receiving our output, we searched for several ways to understand the accuracy of our data. Ultimately we settled back on RMSE, but we spent a lot of time being lost because we hadn't nailed down how we wanted to understand our input data. We finally were able to write a small script to check the validaty of our output as well as write an error testing algorithm in order to check our performancces across our different regressions</ul></li></li>
+</div>
+
+<hr class="featurette-divider">
+<div class="row">
+
+  <h3 class="pull-right">Our heros decide on how to start training their ship</h4><br><br><br><br>
+      <ul>
+        <li><h4 class="text-info">Iteration Based Implementation</h4>
+          <ul><li>There are <a href="http://see.stanford.edu/materials/aimlcs229/ML-advice.pdf">two theories</a> behind implementing a machine learning algorithm. The first is through careful planning before implementation. The advantages of this strategy include likely producing a more scalable and elegant algorithm. The dangers of this approach misprioritization, given the task ahead is relatively hazy. Our recommended strategy is a 'build-and'fux" strategy. In this implementation, the goal is to quickly implementa and algorithm, and use extensive testing to determine growth areas. The advantage of this approach is most time is spent on relevant tasks, and it allows for a greater understanding of timelines.</ul></li></li>
+        <li><h4 class="text-info">First Features</h4>
+          <ul><li>In our first feature extration, the goal is to use a common feature that will provide a good approximation for what you want to do. Common image features are listed <a href="https://en.wikipedia.org/wiki/Feature_extraction#Image_processing">here</a>. Other features include a dictionary of words, etc. Whatever it is, make sure it is something you believe will answer, at a broad level, your question.</ul></li>
+        </li></li>
+        <li><h4 class="text-info">Using Your Data With Your Machine</h4>
+          <ul><li></ul></li></li>
+        <li><h4 class="text-info">Inperpreting Your Output</h4>
+          <ul><li>Often times there is one test that we're juding ourselves on. Though that is the judgement, we want to examine where we are weak or strong. For example, in classifying galaxies, we found we struggled most in classifying whether our object was a sphere or a spiral, but were near perfect accuracy in determining whether it was an anomoly. In that regards, we were able to generate a greater amount of data to guide us as we entered iteration. <a href="https://class.coursera.org/ml-003/lecture/67">This guide on error testing was a great resource for us</a></ul></li></li>
 </div>

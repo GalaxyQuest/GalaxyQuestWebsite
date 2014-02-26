@@ -1,15 +1,36 @@
 <div>
   <div class="chapterTitle">
     <h2>Chapter 1: Discovering our Data</h2>
-    <h3>One sentence header on the chapter (non space themed)</h3>
+    <h3>Understanding data inputs, outputs and evaluation</h3>
   </div>
   <div class="chapter">
-    Scribe your journey here, as we document our space quest
+    As our hero's gathered, looking forward to their upcoming quest, they received a package from <a href="http://www.galaxyzoo.org/#/">Galaxy Zoo HQ</a>.
+    In preparation for our space voyage, we've received thousands of pictures our scientists have painstakingly classified during years of staring into a telescope. To begin training our ship we worked hard to understand the data we were working with.
+    These thousands of intergalactic photos were of lower quality than we would have liked, spanning 426x426 pixels each. They were in color, but the color was muted. Most importantly, we noticed the photos were consistently centered, allowing us to easily track where the galaxy would be during training.
+    <img src="../images/galaxySample.jpg">
+    Our classifications were at first puzzling. We quickly learned that our classifications were actually the responses of our citizens, helping us in our quest. Our scientists had polled hundreds of citizens, creating a distribution of probabilities which dictated the likelihood any galaxy was something special. Furthermore, each galaxy had many potential <a href="https://kaggle2.blob.core.windows.net/competitions/kaggle/3175/media/Screen%20Shot%202013-09-25%20at%2010.08.17.png">attributes</a>. This meant the best matches we had were this distributions, and in order to best accomplish our task, we would be trying to match our ship up to the smarts of our citizens.
+
+    Finally, in a conference with HQ, we concluded that they best method for our judgement would be a <a href="https://www.kaggle.com/wiki/RootMeanSquaredError">Root Mean Squared Error Test</a>
+
+    Understanding the different parts allowed for a targetting research for what we wanted to do next.
   </div>
   <div class="chapterTitle">
     <h2>Our Learnings and Discovered Best Practices</h2>
   </div>
   <div class="chapter">
-    Scribe our learnings here, as we document for future space cadets
+    Understanding inputs and outputs will vary depending on your question. 
+    <h4>Understanding your inputs</h4>
+    A strong understanding of inputs include understanding the data you're given as well as what can exist with your common inputs. 
+    Common input types include: a categoric input (eg. English word), an ordinal input (eg. age), and 2D arrays (eg. an image). <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">This site</a> contains several common data inputs from less to more complex.  
+    Expect a strong understanding of your input dataset to generate ideas on how you will generate metadata from what you're given. 
+    <h4>Understanding your outputs</h4>
+    Understanding your output is will depend on the question you're asked. Gathering an understanding of your ouput will allow you to assess what you consider to be a successful model. 
+    <h4>Understanding measurements</h4>
+    Understand how you want to measure your results: This will be your guideline for the coming future. Be sure the measurement you use is what you want to measure. Many machine learning algorithms have best practices associated with them. Many popular ones include : accuracy, etc
+    <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">Good place for accuracy tests</a>
+    <h4>Planning for your test data set</h4>
+    <h4>Great sites for sample data sets</h4> 
+    <a href="http://www.kaggle.com/competitions">Kaggle Competitions</a>
+    <a href="https://archive.ics.uci.edu/ml/datasets.html">Kaggle Competitions</a>
   </div>
 </div>

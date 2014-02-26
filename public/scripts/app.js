@@ -30,9 +30,8 @@ var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
         templateUrl: '../views/partials/randomForests.html',
         controller: 'RandomForestsController'
       })
-      .when('/neuralNet', {
-        templateUrl: '../views/partials/neuralnet.html',
-        controller: 'NeuralNetController'
+      .when('/randomForestsVisual', {
+        templateUrl: '../views/partials/randomForestsVisual.html',
       })
       .otherwise({
         redirectTo: '/'

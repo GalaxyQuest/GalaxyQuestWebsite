@@ -2,36 +2,34 @@
   <div>
   <div class="chapterTitle">
     <h2>Chapter 2: Researching our Path</h2>
-    <h3>One sentence header on the chapter (non space themed)</h3>
+    <h3>Forging a path through space requires knowedge of the environment</h3>
   </div>
-  <div class="chapter">
-    <div class = "content">
-      <visualization>
-        <div class = "d3features">
-          <features> 
-            <div class = "text">
-               All machine learning algorithms take inputs that describe the data we are trying to analyze. These descriptors are often called input "features". A random forest machine learning algorithm will build decision trees based on these features.  At each node along the tree, a decision is made.  The tree then will pick a new set of features to make a decision on, again at random, until the maximum depth of the tree is reached.  The user can set this maximum value or let the tree exhaust all possibilities on its own.
-          </div>
-          </features>
-        </div>
-        <random-forest>
-          <div class = "text">
-            The user can specify the number of trees the algorithm will make. The first feature and solution set stimulates the creation of the full tree set (the random forest). Further feature/solution sets will refine this forest of decision trees to make more accurate predictions.
-          </div>
-        </random-forest>
-        <div class = "text">
-          Each trained decision tree alone is a weak estimator. This means that a single decision tree has little predictive power.  It also means that each tree can vary wildly in its prediction.  This difference in their predictions is called variance.  When many (often thousands or more) of these weak estimators results are combined, we are given a suprisingly accurate prediction.  This is done through a process called bootstrapped aggregation.
-
-          We chose to use the random forests machine learning algorithm for its ease of use and high accuracy. There are many things about random forests that make them easy to use relative to other machine learning algorithms. One major factor is that overfitting is less of a problem with random forests compared to other machine learning algorithms. This is the case for myriad reasons including the random nature of the trees and using bagging rather than boosting for aggregation. Another reason random forests are easier to use compared to other machine learning algorithms is that there is no need to use a cross validation set to test the generalization error of a random forest. This is because the random forest algorithm uses the unused features discussed above to calculate generalization error of the model it is building on the fly.
-        </div>
-      </visualization>
+      <div class="chapter">
+      <ul>
+        <li><h4 class="text-info">Find out what other people have done already</h4>
+          <ul><li>In order to create something new, a great first step is to sniff out what already exists.  With the internet being what it is today, it's easier than ever to have access to expert level material.  Look for academic research, scholarly articles, youtube lecture videos from universities and presentations.  At this stage, you want to be learning a lot of "high-level" material to get a feel for the available resources that you could potentially use.  Strive to be able to conduct a presentation on your findings, as this will mean you truely have found and learned the appropriate material.</ul></li>
+        </li>
+        <li><h4 class="text-info">Narrow your focus</h4>
+          <ul><li>Once you know what information exists and the body of research supporting it consists of, it is time to narrow down your search.  Start digging deeper into some ideas you may have glossed over in your first research sprint.  Given your problem and what your expected solution is supposed to provide, now is the time to start deciding on the method you are going to use to rock your problem.</ul></li>
+        </li>
+        <li><h4 class="text-info">Combine your machine and your data</h4>
+          <ul><li>When you know what specific algorithm will suit your needs best, you should look at how to implement it with your data.  Find out what tools exist to help you with this approach.  Some tools come with built in features that may help you in your search for the answers you seek.  Take a look at what inputs these tools take and see which ones will work with the existing data set you have already.</ul></li>
+      </ul>
+    </div>
+  <hr class="featurette-divider">
+  <div class="row">
+  <h3 class="pull-right">Our Learnings and Discovered Best Practices</h3><br><br><br>
+    </div>
+    <div class="chapter">
+      <ul>
+        <li><h4 class="text-info">Find out what other people have done already</h4>
+            <ul><li>While it took some time to set up our development environment, Sci-kit learn gave us a direction to start working in.  It is specifically built for our type of research and included a number of modules for us to use in our Galaxy Quest adventure.  There are also a lot of great videos and resources we found to aid educating ourselves about machine learning.  <a href="https://www.youtube.com/user/ProfNandoDF"> Professor Nando de Freitas</a> from the University of British Columbia has an excellent series of lecture videos to start learning with.  Thanks Professor de Freitas!</ul></li>
+        <li><h4 class="text-info">Narrow your focus</h4>
+          <ul><li>After much research, we decided that we would use a Random Forest regression to solve our problem.  For more in-depth information and a kick ass visual on how Random Forests work, check out our <a href="/randomForestsVisual">visualization page.</a></ul></li>
+        <li><h4 class="text-info">Combine your machine and your data</h4>
+            <ul><li>The tools we chose came with ways of developing features that we needed for our algorithm.  In particular, sci-kit image gave us a way to change the size of the images in our dataset and look for certain features within those images, then send them back to our algorithm to do work on.  Knowing your dataset and what features you may want to use, as well as what your particular algorithm is good at will help you in this step.</ul></li>
+          </li>
+      </ul>   
     </div>
   </div>
-  <div class="chapterTitle">
-    <h2>Our Learnings and Discovered Best Practices</h2>
-  </div>
-  <div class="chapter">
-    Scribe our learnings here, as we document for future space cadets
-  </div>
-</div>
 </body>

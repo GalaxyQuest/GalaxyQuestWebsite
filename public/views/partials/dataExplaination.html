@@ -1,36 +1,41 @@
 <div>
   <div class="chapterTitle">
     <h2>Chapter 1: Discovering our Data</h2>
-    <h3>Understanding data inputs, outputs and evaluation</h3>
   </div>
-  <div class="chapter">
-    As our hero's gathered, looking forward to their upcoming quest, they received a package from <a href="http://www.galaxyzoo.org/#/">Galaxy Zoo HQ</a>.
-    Our package included a set of <a href="https://en.wikipedia.org/wiki/Training_set">training data</a> and a set of <a href="https://en.wikipedia.org/wiki/Test_set">test data</a>.
-        <h4>Understanding your inputs</h4>
-    The training data we plan to train our ship's navagation system on included thousands of input vectors along with answer vectors to accompany them. 
-    Working to get a sense of these pictures, we examined their dimensions (424x424), noticed the galaxies were consistently centered, and saw that these pictures were in color
-        <img src="../images/galaxySample.jpg">
-        <h4>Understanding your answers</h4>
-    Our answer set was a determined through <a href="http://www.galaxyzoo.org/#/classify">crowd sourcing each galaxy's classification</a>. Since there were many people classifying each galaxy, our answer set was a distribution of probabilities associated with each galaxy. Furthermore, each galaxy had many potential <a href="https://kaggle2.blob.core.windows.net/competitions/kaggle/3175/media/Screen%20Shot%202013-09-25%20at%2010.08.17.png">attributes</a>. This meant the 'truth' that we were seeking was a the collective responses of our citizens.
-        <h4>Understanding your Measurement</h4>
-    Finally, Galaxy Zoo HQ, had mentioned that our ship's performance would be judged on the <a href="https://www.kaggle.com/wiki/RootMeanSquaredError">Root Mean Squared Error Testing</a>. Knowing that the performance would act as our only form of judgement meant that we would have greater leeway in performance time and the amount of memory we would be able to use.  
-  
-  </div>
-  <div class="chapterTitle">
-    <h2>Our Learnings and Discovered Best Practices</h2>
-  </div>
-  <div class="chapter">
-    Understanding inputs and outputs will vary depending on your question. 
-        <h4>Understanding your inputs</h4>
-    Turning a sharp eye towards your input data (the test and training set) will be valuable in researching the best ways to approach your project. Expect a strong understanding of your input dataset to give you a few hypotheses on how to <a href=" https://en.wikipedia.org/wiki/Feature_extraction">feature extract</a> based on your specific input type. 
-    Common input types include: categoric inputs (eg. English word), ordinal inputs (eg. age), and 2D arrays (eg. an image). <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">This site</a> contains several common data inputs from less to more complex.  
-        <h4>Understanding your answers</h4>
-    Your output will be the foundation on which you build your machine. An understanding of your output will create relevant avenues for future research.
-        <h4>Understanding your Measurement</h4>
-    Understanding the method by which you choose to assess your success will be the guideline for your future development. Be sure the measurement you use is what you want to measure. This link is a resource for several different types of <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">accuracy tests</a>.
-        <h4>Great sites for sample data sets</h4> 
-    Below are some great sites for some sample data sets
-    <a href="http://www.kaggle.com/competitions">Kaggle Competitions</a>
-    <a href="https://archive.ics.uci.edu/ml/datasets.html">Kaggle Competitions</a>
-  </div>
+<div class="row">
+  <h3 class="pull-right">As our hero's gathered, looking forward to their upcoming quest, they received a package from <a href="http://www.galaxyzoo.org/#/">Galaxy Zoo HQ</a>.
+    Our package included a set of <a href="https://en.wikipedia.org/wiki/Training_set">training data</a> and a set of <a href="https://en.wikipedia.org/wiki/Test_set">test data</a></h4><br><br><br>
+      <ul>
+        <li><h4 class="text-info">Understanding your Inputs</h4>
+          <ul><li>The training data we plan to train our ship's navagation system on included thousands of input vectors along with answer vectors to accompany them. Working to get a sense of these pictures, we examined their dimensions (424x424), noticed the galaxies were consistently centered, and saw that these pictures were in color</ul></li>
+        </li>
+<!-- Align this picture properly -->
+<!--           <div class="col-md-5">
+            <img src="../images/galaxySample.jpg">
+        </div> -->
+        <li><h4 class="text-info">Understanding your Answers</h4>
+          <ul><li>Our answer set was a determined through <a href="http://www.galaxyzoo.org/#/classify">crowd sourcing each galaxy's classification</a>. Since there were many people classifying each galaxy, our answer set was a distribution of probabilities associated with each galaxy. Furthermore, each galaxy had many potential <a href="https://kaggle2.blob.core.windows.net/competitions/kaggle/3175/media/Screen%20Shot%202013-09-25%20at%2010.08.17.png">attributes</a>. This meant the 'truth' that we were seeking was a the collective responses of our citizens.</ul></li>
+        <li><h4 class="text-info">Understanding your Measurement</h4>
+          <ul><li>Finally, Galaxy Zoo HQ, had mentioned that our ship's performance would be judged on the <a href="https://www.kaggle.com/wiki/RootMeanSquaredError">Root Mean Squared Error Testing</a>. Knowing that the performance would act as our only form of judgement meant that we would have greater leeway in performance time and the amount of memory we would be able to use.</ul></li>
+</div>
+
+<hr class="featurette-divider">
+<div class="row">
+  <h3 class="pull-right">Our Learnings and Discovered Best Practices</h4><br><br><br>
+      <ul>
+        <li><h4 class="text-info">Understanding your Inputs</h4>
+          <ul><li>Turning a sharp eye towards your input data (the test and training set) will be valuable in researching the best ways to approach your project. Expect a strong understanding of your input dataset to give you a few hypotheses on how to <a href=" https://en.wikipedia.org/wiki/Feature_extraction">feature extract</a> based on your specific input type. 
+          Common input types include: categoric inputs (eg. English word), ordinal inputs (eg. age), and 2D arrays (eg. an image). <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">This site</a> contains several common data inputs from less to more complex.  </ul></li>
+        </li>
+<!-- Align this picture properly -->
+<!--           <div class="col-md-5">
+            <img src="../images/galaxySample.jpg">
+        </div> -->
+        <li><h4 class="text-info">Understanding your Answers</h4>
+          <ul><li>Your output will be the foundation on which you build your machine. An understanding of your output will create relevant avenues for future research.</ul></li>
+        <li><h4 class="text-info">Understanding your Measurement</h4>
+          <ul><li>Understanding the method by which you choose to assess your success will be the guideline for your future development. Be sure the measurement you use is what you want to measure. This link is a resource for several different types of <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">accuracy tests</a>.</ul></li>
+        <li><h4 class="text-info">Below are some great sites for some sample data sets</h4>
+          <ul><li><a href="http://www.kaggle.com/competitions">Kaggle Competitions</a></ul></li>
+          <ul><li><a href="https://archive.ics.uci.edu/ml/datasets.html">UCI Machine Learning Repository</a></ul></li>  
 </div>

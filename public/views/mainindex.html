@@ -25,17 +25,47 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Hitchhikers Guide to Classifying Galaxies: <span class="text-muted">Implementing your machine learning algorithm</span></h2>
-          <p class="lead">Image of galaxy and information about this example</p>
-        </div>
+    <div class="content galaxyclass" ng-controller='GalaxyClassController'>
+      <div class="row">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="img-responsive img-rounded" src="../../images/galaxyExample1.jpg">
         </div>
-      </div>      
+        <div class="col-md-7">
+          <div class="row">
+            <div class="panel panel-default" style="background-color : #02022A;">
+              <!-- Default panel contents -->
+              <div class="panel-heading " style="background-color : #101010; text-shadow: 3px 3px 3px #333333;"><h2 class="text-info text-center" style="color: #FFFFFF">Galaxy Morphology Classification</h2></div>
+
+              <!-- Table -->
+              <table class="table text-center" style="color: #FFFFFF;">
+                <tr>
+                  <th class="text-center"><h3> Classification </h3></th>
+                  <th class="text-center"><h3> Percent likelihood </h3></th>
+                  <th class="text-center"><h3> Example </h3></th>
+                </tr>
+                <tr >
+                  <td style="vertical-align: middle;"><h4> Smooth </h4></td>
+                  <td style="vertical-align: middle;"><h4> 60 % </h4></td>
+                  <td style="vertical-align: middle;"> <img src="../../images/Smooth.png" /> </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: middle;"><h4> Features or disk </h4></td>
+                  <td style="vertical-align: middle;"><h4> 20 % </h4></td>
+                  <td style="vertical-align: middle;"> <img src="../../images/FeaturesOrDisk.png" /> </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: middle;"><h4> Star or artifact </h4></td>
+                  <td style="vertical-align: middle;"><h4> 20% </h4></td>
+                  <td style="vertical-align: middle;"> <img src="../../images/StarOrArtifcat.png" /> </td>
+                </tr>
+                <tr> </tr>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <!-- START THE FEATURETTES -->
 

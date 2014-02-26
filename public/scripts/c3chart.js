@@ -2,7 +2,7 @@ var chart = c3.generate({
   bindto: '.errorChart',
   data: {
     columns: [
-      ['Real Means Squared Error', 0.16, 0.14, 0.132, 0.13]
+      ['Root Means Squared Error', 0.16, 0.14, 0.132, 0.13]
     ]
   },
   axis: {

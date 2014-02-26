@@ -25,17 +25,47 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
+    <div class="content galaxyclass" ng-controller='GalaxyClassController'>
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Hitchhikers Guide to Classifying Galaxies: <span class="text-muted">Implementing your machine learning algorithm</span></h2>
-          <p class="lead">Image of galaxy and information about this example</p>
-        </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive img-rounded" src="../../images/galaxyExample1.jpg">
         </div>
-      </div>      
+        <div class="col-md-7">
+          <div class="row">
+            <div class="panel panel-default" style="background-color : #25323A;">
+              <!-- Default panel contents -->
+              <div class="panel-heading" style="background-color : #101010;"><h2 class="heading">Galaxy Morphology Use Case <span class="text-muted">It'll blow your mind.</span></h2></div>
+
+              <!-- Table -->
+              <table class="table" style="color: #7A96A6;">
+                <tr>
+                  <th> Classification </th>
+                  <th> Percent likelihood </th>
+                  <th> Example </th>
+                </tr>
+                <tr>
+                  <td> Smooth </td>
+                  <td> 60 % </td>
+                  <td> <img src="../../images/Smooth.png" /> </td>
+                </tr>
+                <tr>
+                  <td> Features or disk </td>
+                  <td> 20 % </td>
+                  <td> <img src="../../images/FeaturesOrDisk.png" /> </td>
+                </tr>
+                <tr>
+                  <td> Star or artifact </td>
+                  <td> 20% </td>
+                  <td> <img src="../../images/StarOrArtifcat.png" /> </td>
+                </tr>
+                <tr> </tr>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <!-- START THE FEATURETTES -->
 

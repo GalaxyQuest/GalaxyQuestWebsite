@@ -1,16 +1,30 @@
 <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>
 <script src="../../styles/bootstrapIndexAssets-js/docs.min.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<script type="text/javascript">
+$(document).ready(function() {
+   $('.col-md-4').localScroll({duration:800});
+});
+</script>
 
 <div class="container contact" ng-controller='ContactController'>
     <br>
     <br>
     <br>
+  <a name='top'></a>
   <div class="jumbotron">
     <div class="row">
       <div class="col-md-4">
         <h2 class="heading pull-left">Hack Reactor Machine Learning Team</h2>
-        <h4 class="lead pull-left">January 2014 Cohort</h4>
+        <h4 class="pull-left">Members from the January 2014 Cohort</h4><br>
+        <ul class="pull-left">
+          <li><a href="#scott">Scott</a>, Team Project Manager</li>
+          <li><a href="#jeanette">Jeanette</a></li>
+          <li><a href="#sonali">Sonali</a></li>
+          <li><a href="#charles">Charles</a></li>
+          <li><a href="#kwyn">Kwyn</a></li>
+          <li><a href="#vinnie">Vinnie</a></li>
+        <ul>
       </div>
       <div class="col-md-8">
         <img class="featurette-image img-responsive img-rounded team" src="../../images/teamwhole.jpg" alt="Team image">
@@ -32,6 +46,7 @@
       </ul>
       </div>
       <div class="col-md-8 col-md-offset-1" style="{float:none; display:inline-block; vertical-align:middle;}">
+        <a name="jeanette"></a>
         <h3 class="text-info">Jeanette Pettibone</h3>
         <h4> Linguist with experience in Natural Language Processing. Expert in rapid prototyping of machine learning algorithms</h4>
       </div>
@@ -51,6 +66,7 @@
         </ul>
         </div>
         <div class="col-md-8 col-md-offset-1" style="{float:none; display:inline-block; vertical-align:middle;}">
+          <a name="vinnie"></a>
           <h3 class="text-info">Vinnie Giarrusso</h3>
           <h4> Musician and teacher in his life before code.  When not spending his spare time hacking with three.js, you can find him out hiking and exploring.</h4>
         </div>
@@ -69,6 +85,7 @@
         </ul>
         </div>
         <div class="col-md-8 col-md-offset-1" style="{float:none; display:inline-block; vertical-align:middle;}">
+          <a name="charles"></a>
           <h3 class="text-info">Charles Hughes</h3>
           <h4> Science and technology nerd. Music geek. Renaissance hacker.</h4>
         </div>
@@ -89,6 +106,7 @@
         </ul>
         </div>
         <div class="col-md-8 col-md-offset-1" style="{float:none; display:inline-block; vertical-align:middle;}">
+          <a name="kwyn"></a>
           <h3 class="text-info">Kwyn Alice Meagher</h3>
           <h4> Full-stack engineer. Programming polyglot. Machine learning and parallel computing enthusiast. </h4>
         </div>
@@ -107,6 +125,7 @@
         </ul>
         </div>
         <div class="col-md-8 col-md-offset-1" style="{float:none; display:inline-block; vertical-align:middle;}">
+          <a name="scott"></a>
           <h3 class="text-info">Scott Zhang</h3>
           <h4> Web developer and former management consultant. Loves Javascript, and en route to becoming Random Forests Guru. </h4>
         </div>
@@ -126,13 +145,16 @@
         </ul>
         </div>
         <div class="col-md-8 col-md-offset-1" style="{float:none; display:inline-block; vertical-align:middle;}">
+          <a name="sonali"></a>
           <h3 class="text-info">Sonali Dayal</h3>
           <h4> Data engineer and former biochemist. Expert feature extractor for machine learning.</h4>
         </div>
       </div>
     </div>
+    <a href="#top" class='pull-right'>Back to Top</a>
   </div>
 </div>
+
 
 
 

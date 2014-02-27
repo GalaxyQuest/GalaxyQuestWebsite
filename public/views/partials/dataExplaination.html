@@ -7,16 +7,17 @@
     Our package included a set of <a href="https://en.wikipedia.org/wiki/Training_set">training data</a> and a set of <a href="https://en.wikipedia.org/wiki/Test_set">test data</a></h3><br>
       <ul>
         <li><h4 class="text-info">Understanding your Inputs</h4>
-          <ul><li>The training data we plan to train our ship's navagation system on included thousands of input vectors along with answer vectors to accompany them. Working to get a sense of these pictures, we examined their dimensions (424x424), noticed the galaxies were consistently centered, and saw that these pictures were in color</ul></li>
+          <ul><li>The training data with which we planned to train our ship's navigation system included thousands of input vectors, along with accompanying answer vectors. In our analysis of these images, we examined their dimensions (424x424), noticed that the galaxies were consistently centered, and saw that the images were in color.</ul></li>
         </li>
 <!-- Align this picture properly -->
 <!--           <div class="col-md-5">
             <img src="../images/galaxySample.jpg">
         </div> -->
+        <!-- Answer set/answer vectors? -->
         <li><h4 class="text-info">Understanding your Answers</h4>
-          <ul><li>Our answer set was a determined through <a href="http://www.galaxyzoo.org/#/classify">crowd sourcing each galaxy's classification</a>. Since there were many people classifying each galaxy, our answer set was a distribution of probabilities associated with each galaxy. Furthermore, each galaxy had many potential <a href="https://kaggle2.blob.core.windows.net/competitions/kaggle/3175/media/Screen%20Shot%202013-09-25%20at%2010.08.17.png">attributes</a>. This meant the 'truth' that we were seeking was a the collective responses of our citizens.</ul></li>
+          <ul><li>Our answer set was determined through <a href="http://www.galaxyzoo.org/#/classify">crowd sourcing each galaxy's classification</a>. Since there were many people classifying each galaxy, our answer set contained a distribution of probabilities associated with each galaxy. Furthermore, each galaxy had many potential <a href="https://kaggle2.blob.core.windows.net/competitions/kaggle/3175/media/Screen%20Shot%202013-09-25%20at%2010.08.17.png">attributes</a>. This meant the 'truth' that we were seeking was the collective responses of our citizens.</ul></li>
         <li><h4 class="text-info">Understanding your Measurement</h4>
-          <ul><li>Finally, Galaxy Zoo HQ, had mentioned that our ship's performance would be judged on the <a href="https://www.kaggle.com/wiki/RootMeanSquaredError">Root Mean Squared Error Testing</a>. Knowing that the performance would act as our only form of judgement meant that we would have greater leeway in performance time and the amount of memory we would be able to use.</ul></li>
+          <ul><li>Finally, Galaxy Zoo HQ had mentioned that our ship's performance would be judged by <a href="https://www.kaggle.com/wiki/RootMeanSquaredError">Root Mean Squared Error Testing</a>. As this calculated result would be the only criteria for judgment, we were granted leeway in performance time and memory usage.</ul></li>
 </div>
 
 <hr class="featurette-divider">
@@ -24,8 +25,8 @@
   <h3 class="pull-right">Lessons Learned and Discovered Best Practices</h3><br><br><br>
       <ul>
         <li><h4 class="text-info">Understanding your Inputs</h4>
-          <ul><li>Turning a sharp eye towards your input data (the test and training set) will be valuable in researching the best ways to approach your project. Expect a strong understanding of your input dataset to give you a few hypotheses on how to <a href=" https://en.wikipedia.org/wiki/Feature_extraction">feature extract</a> based on your specific input type. 
-          Common input types include: categoric inputs (eg. English word), ordinal inputs (eg. age), and 2D arrays (eg. an image). <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">This site</a> contains several common data inputs from less to more complex.  </ul></li>
+          <ul><li>Turning a sharp eye toward your input data (the test and training sets) will be valuable in researching the best ways to approach your project. Expect a strong understanding of your input dataset to give you a few hypotheses on how to <a href=" https://en.wikipedia.org/wiki/Feature_extraction">extract features</a> based on your specific input type. 
+          Common input types include: categoric inputs (e.g., English word), ordinal inputs (e.g., age), and 2D arrays (e.g., an image). <a href=" http://www.cs.cornell.edu/courses/cs578/2003fa/performance_measures.pdf">This site</a> contains several common data inputs ranging from less to more complex.  </ul></li>
         </li>
 <!-- Align this picture properly -->
 <!--           <div class="col-md-5">

@@ -9,18 +9,18 @@
     </div>
   </div>
   <div class="col-md-7">
-      <h2 class="featurette-heading">Knowing Your Error</h2>
+      <h2 class="featurette-heading">Knowing your Error</h2>
   </div>
-  <p class="lead">Once you have your first result under your belt, now comes the task of improving the margin of error.</p>
+  <p class="lead">Once you have your first result under your belt, your next task is improving the margin of error.</p>
 </div>
 <hr class="featurette-divider">
 <div class="row">
-  <h3 class="pull-left">Our heroes' epic battle with error margins</h4><br><br><br><br>
+  <h3 class="pull-left">Our Heroes' Epic Battle with Error Margins</h4><br><br><br><br>
       <ul>
-        <li><h4 class="text-info">Playing with the algorithm's parameters</h4>
-          <ul><li>The parameters that may be adjusted in a random forests algorithm include the max-depth of our trees, the number of trees we used, amount of features to use and the size of the subset of features each tree can choose from. Our heroes adjusted these parameters to try and find an optimal algorithm configuration for our problem.</ul></li>
-        <li><h4 class="text-info">Adding to our feature arsenal</h4>
-          <ul><li>Our heroes added additional input features to feed to their learning algorithm that they thought would decrease the generalization error observed once the algorithm was trained. Measuring generalization error for each of the different outputs they produced gave them an idea of what they could improve on. Sometimes adding features that seemed like they would help actually ended up increasing their generalization error. Our heroes hypothesize that this was the case because the new features may have been increasing our model's bias towards those features of the data.</ul></li>
+        <li><h4 class="text-info">Playing with the Algorithm's Parameters</h4>
+          <ul><li>The parameters that may be adjusted in a random forests algorithm include the number of trees we use, maximum tree depth, the number of features to use, and the size of the subset of features each tree can choose from. Our heroes adjusted these parameters to try and find an optimal algorithm configuration for our problem.</ul></li>
+        <li><h4 class="text-info">Adding to our Feature Arsenal</h4>
+          <ul><li>Our heroes added additional input features to feed to their learning algorithm that they thought would decrease the generalization error observed once the algorithm was trained. Measuring generalization error for each of the different outputs they produced gave them an idea of what they could improve. Sometimes adding features that seemed like they would help actually ended up increasing their generalization error. Our heroes hypothesize that this was the case because the new features may have been increasing our model's bias towards those features of the data.</ul></li>
         </li></li>
 </div>
 
@@ -29,8 +29,8 @@
 
   <h3 class="pull-right">Lessons Learned and Discovered Best Practices</h4><br><br><br><br>
       <ul>
-        <li><h4 class="text-info">Avoid overfitting and underfitting</h4>
-          <ul><li>Measuring training and test error of your current algorithm can help you to understand wether you are having a overfitting or underfitting problem. Both the algorithm's parameters and input features can affect overfitting and underfitting. Overfitting will give you a low margin of error on your training set, but will not produce a great result when you introduce new data to predict on. Underfitting will generally give you high margin of error across both training and new data. Use this information to understand what parameters need adjustment in your algorithm.</ul></li></li>
+        <li><h4 class="text-info">Avoid Overfitting and Underfitting</h4>
+          <ul><li>Measuring training and test error of your current algorithm can help you understand whether you are having an overfitting or underfitting problem. Both the algorithm's parameters and input features can affect overfitting and underfitting. Overfitting will give you a low margin of error with your training set, but it will not produce a great result when you introduce new data. Underfitting will generally give you a high margin of error across both training and new data. Use this information to understand what parameters need adjustment in your algorithm.</ul></li></li>
 
 </div>
 <script src="../scripts/c3chart.js"></script>

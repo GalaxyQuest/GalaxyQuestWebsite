@@ -1,139 +1,141 @@
-<style>
-svg {
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 10px;
-}
-</style>
+      <style>
+      svg {
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 10px;
+      }
+      </style>
 
-<div class="container mlintro" ng-controller='MLIntroController'>
- <div class = "content">
-  <div class="row featurette">
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" src="../../images/MLWordCluster.png">
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Machine Learning <span class="text-muted">A Definition</span></h2>
-    </div>
-      <p class="lead"><a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Tom Mitchell (1997)</a>: "A computer program is said to <i>learn</i> from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E"</p>
-      <p class='lead'>Example: A Spam Filter<br>
-      <i>Experience E</i> - Watching the emails being labeled as spam or not-spam<br>
-      <i>Task T</i> - Classifying the emails as spam or not-spam<br>
-      <i>Performance P</i> - The number or percentage of emails correctly classified as spam or not-spam</p>
-    </div>
+      <div class="container mlintro" ng-controller='MLIntroController'>
+       <div class = "content">
+        <div class="row featurette">
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="../../images/MLWordCluster.png">
+          </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Machine Learning <span class="text-muted">A Definition</span></h2>
+          </div>
+            <p class="lead"><a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Tom Mitchell (1997)</a>: "A computer program is said to <i>learn</i> from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E"</p>
+            <p class='lead'>Example: A Spam Filter<br>
+            <i>Experience E</i> - Watching the emails being labeled as spam or not-spam<br>
+            <i>Task T</i> - Classifying the emails as spam or not-spam<br>
+            <i>Performance P</i> - The number or percentage of emails correctly classified as spam or not-spam</p>
+          </div>
 
-    <hr class="featurette-divider">
+          <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Regression <span class="text-muted">Predicting a continuous valued output</span></h2>
-        <p class="lead">Observed data is modeled so that outputs for unobserved inputs can be estimated.  </p>
-        <p class='lead'>Example: Housing Prices in Portland, Oregon<br>
-        <i>Input Variable / Feature</i> (x-axis) - Size in Square Feet<br>
-        <i>Output Variable / Target</i> (y-axis) - Price in $1000s<br>
-        With linear regression, we model the data with a straight line and then use that line to predict outputs for new inputs  
-        </p>
-        <p>
-        Click on "Find Linear Regression" to see how we can best fit the data with a linear function.<br>
-        Click on "Predict New Data Output" to see how we use the linear regression model. 
-        </p>
-      </div>
-      <div class="col-md-5">
-        <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
-        <div class='regression'>
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Regression <span class="text-muted">Predicting a continuous valued output</span></h2>
+              <p class="lead">Observed data is modeled so that outputs for unobserved inputs can be estimated.  </p>
+              <p class='lead'>Example: Housing Prices in Portland, Oregon<br>
+              <i>Input Variable / Feature</i> (x-axis) - Size in Square Feet<br>
+              <i>Output Variable / Target</i> (y-axis) - Price in $1000s<br>
+              With linear regression, we model the data with a straight line and then use that line to predict outputs for new inputs  
+              </p>
+              <p>
+              Click on "Find Linear Regression" to see how we can best fit the data with a linear function.<br>
+              Click on "Predict New Data Output" to see how we use the linear regression model. 
+              </p>
+            </div>
+            <div class="col-md-5">
+              <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+              <div class='regression'>
+              </div>
+              <button class="btn btn-primary" class="btn btn-primary" ng-click='drawLine()'>Find Linear Regression</button> <button class="btn btn-primary" ng-click='predictData()'>Predict New Data Output</button> <button class="btn btn-primary" ng-click='clearLine()'>Clear</button>
+            </div>
+          </div>      
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-5">
+              <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+              <div class='classification'>
+              </div>
+              <button class="btn btn-primary" ng-click='classify()'>Classify Data</button> <button class="btn btn-primary" ng-click='predictClass()'>Predict Class</button> <button class="btn btn-primary" ng-click='clearClassify()'>Clear</button>
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Classification <span class="text-muted">Predicting a discrete valued output</span></h2>
+            </div>
+              <p class="lead">Observed data is modeled so that unobserved data can be classified.  </p>
+              <p class='lead'>Example: Cancer<br>
+              <i>2 Features</i> - Tumor Size and Age of Patient<br>
+              <i>2 Classes</i> - Benign and Malignant<br>
+              With classification, we model the observed data to predict the class of new data based on which class the features of new data most closely resemble.
+              </p>
+              <p>
+              Click on "Classify Data" to see how we can best fit the data into two generalizable classes.<br>
+              Click on "Predict Class" to see how we use this model to predict to which class the new data belongs. 
+              </p>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">The Hypothesis <span class="text-muted">Finding a Line to Fit the Data </span></h2>
+              <p class="lead">The learning algorithm uses the training data as input and outputs a function (called the hypothesis).  
+              </p>
+              <p class="lead">Example: Housing Prices in Oregon / Linear Regression<br>
+                The hypothesis takes in as input the size-of-house feature and outputs an estimated target value for the price.
+              </p>
+              <p class="lead">
+                We represent this hypothesis as a linear function in this example:<br>
+                <img class="hypothesis" src="../../images/hypothesisfunction.png">
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="../../images/hypothesisgraph.png">
+
+              <!-- <div class='hypothesis'> -->
+              <!-- </div> -->
+            </div>
+          </div>      
+
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="../../images/costfunction.png"   alt="Generic placeholder image">
+              <!-- <div class='costfunction'> -->
+              <!-- </div> -->
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding the Right Parameters</span></h2>
+            </div>
+              <p class="lead">The cost function helps figure out how to fit the best possible straight line to our data by minimizing the parameters &theta;<sub align='right'>0</sub> and &theta;<sub algin='right'>1</sub> so that the hypothesis h<sub>&theta;</sub>(x) is as close as possible to the known output (y) for each observed input (from 1 to m) in the training data.
+              </p>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Training Process <span class="text-muted">Classification</span></h2>
+              <p class="lead">Training a supervised machine learning algorithm involves the following iterative process: <br>
+                Collecting Data: Data is needed for both training and testing the algorithm.<br>
+                Feature Choice and Model Choice: The characteristics of the data affect the features and model used.<br>
+                Training: The known labels for observed data are provided for the algorithm to learn how to model the data.<br>
+                Evaluation: The performace of the algorithm is evaluated.  The process can restart at any one of the previous stages to enhance this performance.<br>
+              </p>
+              <p class="lead">
+                The model created from the training process is then used to predict labels on new data.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="../../images/supervised-classification.png" alt="Generic placeholder image">
+              <a href="http://www.nltk.org/book/ch06.html">Image Source: Python Natural Language Toolkit (NLTK) documentation</a>
+            </div>
+          </div>      
+
+
+          <p>Thanks to <a href="https://www.coursera.org/course/ml">Andrew Ng's Coursera course on Machine Learning</a> for the examples.</p>
         </div>
-        <button ng-click='drawLine()'>Find Linear Regression</button> <button ng-click='predictData()'>Predict New Data Output</button> <button ng-click='clearLine()'>Clear</button>
       </div>
     </div>      
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-5">
-        <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
-        <div class='classification'>
-        </div>
-        <button ng-click='classify()'>Classify Data</button> <button ng-click='predictClass()'>Predict Class</button> <button ng-click='clearClassify()'>Clear</button>
-      </div>
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Classification <span class="text-muted">Predicting a Discrete Valued Output</span></h2>
-      </div>
-        <p class="lead">Observed data is modeled so that unobserved data can be classified.  </p>
-        <p class='lead'>Example: Cancer<br>
-        <i>2 Features</i> - Tumor Size and Age of Patient<br>
-        <i>2 Classes</i> - Benign and Malignant<br>
-        With classification, we model the observed data to predict the class of new data based on which class the features of new data most closely resemble.
-        </p>
-        <p>
-        Click on "Classify Data" to see how we can best fit the data into two generalizable classes.<br>
-        Click on "Predict Class" to see how we use this model to predict to which class the new data belongs. 
-        </p>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">The Hypothesis <span class="text-muted">Finding a Line to Fit the Data </span></h2>
-        <p class="lead">The learning algorithm uses the training data as input and outputs a function (called the hypothesis).  
-        </p>
-        <p class="lead">Example: Housing Prices in Oregon / Linear Regression<br>
-          The hypothesis takes in as input the size-of-house feature and outputs an estimated target value for the price.
-        </p>
-        <p class="lead">
-          We represent this hypothesis as a linear function in this example:<br>
-          <img class="hypothesis" src="../../images/hypothesisfunction.png">
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="../../images/hypothesisgraph.png">
-
-        <!-- <div class='hypothesis'> -->
-        <!-- </div> -->
-      </div>
-    </div>      
-
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="../../images/costfunction.png" alt="Generic placeholder image">
-        <!-- <div class='costfunction'> -->
-        <!-- </div> -->
-      </div>
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding the Right Parameters</span></h2>
-      </div>
-        <p class="lead">The cost function helps figure out how to fit the best possible straight line to our data by minimizing the parameters &theta;<sub align='right'>0</sub> and &theta;<sub algin='right'>1</sub> so that the hypothesis h<sub>&theta;</sub>(x) is as close as possible to the known output (y) for each observed input (from 1 to m) in the training data.
-        </p>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Training Process <span class="text-muted">Classification</span></h2>
-        <p class="lead">Training a supervised machine learning algorithm involves the following iterative process: <br>
-          Collecting Data: Data is needed for both training and testing the algorithm.<br>
-          Feature Choice and Model Choice: The characteristics of the data affect the features and model used.<br>
-          Training: The known labels for observed data are provided for the algorithm to learn how to model the data.<br>
-          Evaluation: The performace of the algorithm is evaluated.  The process can restart at any one of the previous stages to enhance this performance.<br>
-        </p>
-        <p class="lead">
-          The model created from the training process is then used to predict labels on new data.
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="../../images/supervised-classification.png" alt="Generic placeholder image">
-        <a href="http://www.nltk.org/book/ch06.html">Image Source: Python Natural Language Toolkit (NLTK) documentation</a>
-      </div>
-    </div>      
-
-
-    <p>Thanks to <a href="https://www.coursera.org/course/ml">Andrew Ng's Coursera course on Machine Learning</a> for the examples.</p>
   </div>
-</div>
 
 <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>
 <script src="../../styles/bootstrapIndexAssets-js/docs.min.js"></script>

@@ -1,5 +1,4 @@
-<div class="container index" ng-controller='MainController' ng-app="galaxyApp">
-  <div class="content">
+<div class = "all" ng-controller='MainController' ng-app="galaxyApp">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=3000>
       <!-- Indicators -->
       <div class="carousel-inner">
@@ -7,63 +6,61 @@
           <img src="../images/bluegalaxy.jpg">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Hitchhikers Guide to Classifying Galaxies: Implementing your machine learning algorithm</h1>
+              <h1>Guidelines for Applying your Machine Learning Algorithm</h1>
+              <h2>"A Hitchhikers Guide to Classifying Galaxies"</h2>
               <a class="btn btn-lg btn-primary" href="#/theGuide" role="button">View Now</a></p>
             </div>
           </div>
         </div>
       </div>
-<!--       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
- --></div><!-- /.carousel -->
+  </div>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+  <div class="container index">
+    <div class="chapterTitle">
+      <h2>Interact with our Galaxy Classifying Machine</h2>
+    </div>
     <div class="content galaxyclass" ng-controller='GalaxyClassController'>
-      <div class="row">
+      <div class="row galaxyClass">
         <div class="col-md-5">
-          <img class="img-responsive img-rounded" ng-src="{{galaxyURL}}">
-          <div class="col-md-3 col-md-offset-4"> <button ng-click="nextGalaxy();" type="button" class="btn btn-primary">Next Galaxy</button> </div>
+          <div class="panel-heading" style="border-radius: 15px">
+            <h2 class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
+          </div>
+          <img class="img-responsive img-rounded galaxy" style="width: 500px"ng-src="{{galaxyURL}}">
+          <div class="col-md-3 col-md-offset-4"><br> 
+            <button ng-click="nextGalaxy();" type="button" class="btn btn-primary">Next Galaxy</button> 
+          </div>
         </div>
         <div class="col-md-7">
-          <div class="row">
             <div class="panel panel-default">
               <!-- Default panel contents -->
-              <div class="panel-heading " style="text-shadow: 3px 3px 3px #333333;"><h2 class="text-info text-center" style="color: #FFFFFF">Galaxy Morphology Classification</h2></div>
-
+              <div class="panel-heading " style="background-color : #101010; text-shadow: 3px 3px 3px #333333;">
+                <h2 class="text-info text-center" style="color: #FFFFFF">Algorithm Outputs</h2>
+              </div>
               <!-- Table -->
               <table class="table text-center" style="color: #FFFFFF;">
                 <tr>
                   <th class="text-center"><h3> Classification </h3></th>
                   <th class="text-center"><h3> Percent likelihood </h3></th>
-                  <th class="text-center"><h3> Example </h3></th>
                 </tr>
                 <tr >
-                  <td style="vertical-align: middle;"><h4> Smooth </h4></td>
-                  <td style="vertical-align: middle;"><h4> {{class1_1}} % </h4></td>
-                  <td style="vertical-align: middle;"> <img src="../../images/Smooth.png" /> </td>
+                  <td style="vertical-align: middle;"><img src="../../images/Smooth.png" /><h5> Smooth </h5></td>
+                  <td style="vertical-align: middle;"><h2> {{class1_1}} % </h2></td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: middle;"><h4> Features or disk </h4></td>
-                  <td style="vertical-align: middle;"><h4> {{class1_2}} % </h4></td>
-                  <td style="vertical-align: middle;"> <img src="../../images/FeaturesOrDisk.png" /> </td>
+                  <td style="vertical-align: middle;"> <img src="../../images/FeaturesOrDisk.png" /><h5> Features or disk </h5></td>
+                  <td style="vertical-align: middle;"><h2> {{class1_2}} % </h2></td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: middle;"><h4> Star or artifact </h4></td>
-                  <td style="vertical-align: middle;"><h4> {{class1_3}} % </h4></td>
-                  <td style="vertical-align: middle;"> <img src="../../images/StarOrArtifcat.png" /> </td>
+                  <td style="vertical-align: middle;"> <img src="../../images/StarOrArtifcat.png" /><h5> Star or artifact </h5></td>
+                  <td style="vertical-align: middle;"><h2> {{class1_3}} % </h2></td>
                 </tr>
                 <tr> </tr>
               </table>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

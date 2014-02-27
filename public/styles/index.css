@@ -121,6 +121,24 @@ path.link {
   border: 1px solid gray;
   box-shadow: 2px 2px 3px #333;
 }
+.panel {
+  border-radius: 15px;
+}
+.panel-heading {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #101010; 
+  text-shadow: 3px 3px 3px #333333;
+}
+.team {
+  border-radius: 15px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
+}
+.img-circle {
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
+}
 
 
 

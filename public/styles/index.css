@@ -112,9 +112,6 @@ path.link {
   width: 95%;
   border-radius: 15px;
 }
-tr {
-  border-top: 1px solid black;
-}
 .index {
   width: 95%;
 }
@@ -123,29 +120,6 @@ tr {
   border-radius: 15px;
   border: 1px solid gray;
   box-shadow: 2px 2px 3px #333;
-}
-table {
-    border-spacing: 0;
-}
-th, td {
-    border: 1px solid #000;
-    padding: 0.5em 1em;
-}
-/* the first 'th' within the first 'tr' of the 'thead': */
-thead tr:first-child th:first-child {
-    border-radius: 0.6em 0 0 0;
-}
-/* the last 'th' within the first 'tr' of the 'thead': */
-thead tr:first-child th:last-child {
-    border-radius: 0 0.6em 0 0;
-}
-/* the first 'td' within the last 'tr' of the 'tbody': */
-tbody tr:last-child td:first-child {
-    border-radius: 0 0 0 0.6em;
-}
-/* the last 'td' within the last 'tr' of the 'tbody': */
-tbody tr:last-child td:last-child {
-    border-radius: 0 0 0.6em 0;
 }
 
 

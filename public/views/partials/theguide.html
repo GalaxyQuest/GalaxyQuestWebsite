@@ -22,7 +22,7 @@
        <div class = "content">
         <div class="row featurette">
           <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="../../images/MLWordCluster.png" style="width: 500px; height: 500px;">
+            <img class="featurette-image img-responsive" src="../../images/MLWordCluster.png">
           </div>
           <div class="col-md-7">
             <h2 class="featurette-heading">Machine Learning <span class="text-muted">A Definition</span></h2>
@@ -54,7 +54,7 @@
               <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
               <div class='regression'>
               </div>
-              <button ng-click='drawLine()'>Find Linear Regression</button> <button ng-click='predictData()'>Predict New Data Output</button> <button ng-click='clearLine()'>Clear</button>
+              <button class="btn btn-primary" class="btn btn-primary" ng-click='drawLine()'>Find Linear Regression</button> <button class="btn btn-primary" ng-click='predictData()'>Predict New Data Output</button> <button class="btn btn-primary" ng-click='clearLine()'>Clear</button>
             </div>
           </div>      
 
@@ -65,7 +65,7 @@
               <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
               <div class='classification'>
               </div>
-              <button ng-click='classify()'>Classify Data</button> <button ng-click='predictClass()'>Predict Class</button> <button ng-click='clearClassify()'>Clear</button>
+              <button class="btn btn-primary" ng-click='classify()'>Classify Data</button> <button class="btn btn-primary" ng-click='predictClass()'>Predict Class</button> <button class="btn btn-primary" ng-click='clearClassify()'>Clear</button>
             </div>
             <div class="col-md-7">
               <h2 class="featurette-heading">Classification <span class="text-muted">Predicting a discrete valued output</span></h2>
@@ -94,7 +94,7 @@
               </p>
               <p class="lead">
                 We represent this hypothesis as a linear function in this example:<br>
-                <img class="featurette-image img-responsive" src="../../images/hypothesisfunction.png">
+                <img class="hypothesis" src="../../images/hypothesisfunction.png">
               </p>
             </div>
             <div class="col-md-5">
@@ -110,7 +110,7 @@
 
           <div class="row featurette">
             <div class="col-md-5">
-              <img class="featurette-image img-responsive" src="holder.js/500x500/auto" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive" src="../../images/costfunction.png"   alt="Generic placeholder image">
               <!-- <div class='costfunction'> -->
               <!-- </div> -->
             </div>
@@ -118,9 +118,6 @@
               <h2 class="featurette-heading">Cost Function <span class="text-muted">Finding the Right Parameters</span></h2>
             </div>
               <p class="lead">The cost function helps figure out how to fit the best possible straight line to our data by minimizing the parameters &theta;<sub align='right'>0</sub> and &theta;<sub algin='right'>1</sub> so that the hypothesis h<sub>&theta;</sub>(x) is as close as possible to the known output (y) for each observed input (from 1 to m) in the training data.
-              </p>
-              <p class="lead">The cost function (also known as the squared error function) looks like the following:<br>
-                <img class="featurette-image img-responsive" src="../../images/costfunction.png">
               </p>
           </div>
 

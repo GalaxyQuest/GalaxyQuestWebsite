@@ -92,7 +92,7 @@ path.link {
 .chapterTitle {
   text-align: center;
   padding-bottom: 5px;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(#fff, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -101,23 +101,43 @@ path.link {
   text-align: center;
 }
 .btn-primary {
+  border: 1px solid black;
   border-radius: 10px;
 }
 .galaxyClass {
   border: 1px solid black;
   padding: 15px;
-  background-color: #4e5d6c;
   margin-left: 2%;
+  background-color: #878991;
+  width: 95%;
+  border-radius: 15px;
+}
+.index {
   width: 95%;
 }
-.tableWhole {
-  border: 1px solid black;
+.galaxy {
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
 }
-tr {
-  border-top: 1px solid black;
+.panel {
+  border-radius: 15px;
 }
-.container index {
-  width: 85%;
+.panel-heading {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #101010; 
+  text-shadow: 3px 3px 3px #333333;
+}
+.team {
+  border-radius: 15px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
+}
+.img-circle {
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
 }
 
 

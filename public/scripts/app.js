@@ -52,6 +52,7 @@ var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
         "class1" : [0.165002,0.834998,0]
       }
     };
+    //test commit to check if arkady is still logged in
     var keys = Object.keys(galaxies);
     var currentIndex = Math.floor(Math.random()*keys.length);
       $scope.galaxyID=keys[currentIndex];

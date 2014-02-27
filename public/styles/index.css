@@ -4,8 +4,8 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
-  background-color: #ccc;
+  /*color: #5a5a5a;*/
+  /*background-color: #ccc;*/
 }
 
 .col-lg-4 {
@@ -87,6 +87,15 @@ path.link {
 }
 .carousel-inner{
   border-radius: 5px;
+}
+
+.chapterTitle{
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.hypothesis{
+  text-align: center;
 }
 
 
@@ -222,7 +231,7 @@ path.link {
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
+  /*.featurette-heading {
     margin-top: 120px;
-  }
+  }*/
 }

@@ -89,14 +89,37 @@ path.link {
   border-radius: 5px;
 }
 
-.chapterTitle{
+.chapterTitle {
   text-align: center;
   padding-bottom: 5px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hypothesis{
   text-align: center;
 }
+.btn-primary {
+  border-radius: 10px;
+}
+.galaxyClass {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: #4e5d6c;
+  margin-left: 2%;
+  width: 95%;
+}
+.tableWhole {
+  border: 1px solid black;
+}
+tr {
+  border-top: 1px solid black;
+}
+.container index {
+  width: 85%;
+}
+
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -201,12 +224,10 @@ path.link {
   }
 
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
+/*
     padding-right: 15px;
-    padding-left:  15px;
+    padding-left:  15px;*/
   }
   .navbar-wrapper .navbar {
     padding-right: 0;

@@ -52,25 +52,26 @@ var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
         "class1" : [0.165002,0.834998,0]
       }
     };
+    //test commit with global config changes
     var keys = Object.keys(galaxies);
     var currentIndex = Math.floor(Math.random()*keys.length);
-      $scope.galaxyID=keys[currentIndex];
-      $scope.class1_1=galaxies[keys[currentIndex]].class1[0]*100;
-      $scope.class1_2=galaxies[keys[currentIndex]].class1[1]*100;
-      $scope.class1_3=galaxies[keys[currentIndex]].class1[2]*100;
-      $scope.galaxyURL="../../images/"+keys[currentIndex]+".jpg";
 
+    var setGalaxy = function(){
+      $scope.galaxyID=keys[currentIndex];
+      $scope.class1_1=(galaxies[keys[currentIndex]].class1[0]*100).toFixed(2);
+      $scope.class1_2=(galaxies[keys[currentIndex]].class1[1]*100).toFixed(2);
+      $scope.class1_3=(galaxies[keys[currentIndex]].class1[2]*100).toFixed(2);
+      $scope.galaxyURL="../../images/"+keys[currentIndex]+".jpg";
+    };
+
+    setGalaxy();
     $scope.nextGalaxy= function(){
       if(currentIndex < keys.length-1){
         currentIndex++ ;
       }else{
         currentIndex = 0;
       }
-      $scope.galaxyID=keys[currentIndex];
-      $scope.class1_1=galaxies[keys[currentIndex]].class1[0]*100;
-      $scope.class1_2=galaxies[keys[currentIndex]].class1[1]*100;
-      $scope.class1_3=galaxies[keys[currentIndex]].class1[2]*100;
-      $scope.galaxyURL="../../images/"+keys[currentIndex]+".jpg";
+      setGalaxy();
     };
   })
   .controller('AlgorithmsController', function($scope) {

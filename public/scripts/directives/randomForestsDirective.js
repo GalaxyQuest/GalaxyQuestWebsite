@@ -74,7 +74,6 @@ galaxyApp.directive("randomForest", function() {
     };
 
     var removeFirstTree = function(){
-      console.log('kill first tree')
       d3.select('.tree').transition().duration(2000)
       .style("opacity", "0")
       .remove();

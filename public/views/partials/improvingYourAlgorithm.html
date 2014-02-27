@@ -15,14 +15,22 @@
 </div>
 <hr class="featurette-divider">
 <div class="row">
-  <h3 class="pull-right">Here are some ways you can improve on your algorithm:</h4><br><br><br>
+  <h3 class="pull-left">Our heros' epic battle with error margins</h4><br><br><br><br>
       <ul>
-        <li><h4 class="text-info">Play with the input parameters</h4>
-          <ul><li>By changing the various parameters for your algorithm, you can come up with a baseline error to begin working with.  In our case, we were able to change the max-depth of our trees, the number of trees we used, amount of features to use and the size of the subset of features each tree can choose from.</ul></li>
-        </li>
-        <li><h4 class="text-info">Error Driven Development</h4>
-          <ul><li>Create or use a method to test where your algorithm is performing weakly.  By knowing where your error margins are greatest, you can develop new features to improve performance in these weak areas.  Improving in these weaker areas will give you a better overall result.</ul></li>
-        <li><h4 class="text-info">Avoid overfitting or underfitting</h4>
-          <ul><li>Overfitting will give you a low margin of error on your training set, but will not produce a great result when you introduce new data to predict on.  Underfitting will generally give you high margin of error across both training and new data.</ul></li>
+        <li><h4 class="text-info">Playing with the algorithm's parameters</h4>
+          <ul><li>The parameters that may be adjusted in a random forests algorithm include the max-depth of our trees, the number of trees we used, amount of features to use and the size of the subset of features each tree can choose from. Our heros adjusted these parameters to try and find an optimal algorithm configuration for our problem.</ul></li>
+        <li><h4 class="text-info">Adding to our feature arsenal</h4>
+          <ul><li>Our heros added additional input features to feed to their learning algorithm that they thought would decrease the generalization error observed once the algorithm was trained. Measuring generalization error for each of the different outputs they produced gave them an idea of what they could improve on. Sometimes adding features that seemed like they would help actually ended up increasing their generalization error. Our heros hypothesize that this was the case because the new features may have been increasing our model's bias towards those features of the data.</ul></li>
+        </li></li>
+</div>
+
+<hr class="featurette-divider">
+<div class="row">
+
+  <h3 class="pull-right">Our Learnings and Discovered Best Practices</h4><br><br><br><br>
+      <ul>
+        <li><h4 class="text-info">Avoid overfitting and underfitting</h4>
+          <ul><li>Measuring training and test error of your current algorithm can help you to understand wether you are having a overfitting or underfitting problem. Both the algorithm's parameters and input features can affect overfitting and underfitting. Overfitting will give you a low margin of error on your training set, but will not produce a great result when you introduce new data to predict on. Underfitting will generally give you high margin of error across both training and new data. Use this information to understand what parameters need adjustment in your algorithm.</ul></li></li>
+
 </div>
 <script src="../scripts/c3chart.js"></script>

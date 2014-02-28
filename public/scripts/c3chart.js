@@ -2,7 +2,7 @@ var chart = c3.generate({
   bindto: '.errorChart',
   data: {
     columns: [
-      ['Root Mean Squared Error', 0.16, 0.14, 0.1269, 0.1247, 0.1248, 0.1233]
+      ['Root Mean Squared Error', 0.1672, 0.1413, 0.1269, 0.1247, 0.1248, 0.1233]
     ], 
     type: 'area-spline'
   },

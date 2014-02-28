@@ -206,9 +206,7 @@ li{
   display: inline-block;
   font-size: 14px;
 }
-.nav>li>a:hover, .nav>li>a:focus {
-  background-color: #2b3e50;
-}
+
 
 
 @keyframes animate {

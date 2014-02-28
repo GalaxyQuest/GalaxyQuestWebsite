@@ -1,25 +1,29 @@
+<a name="top"></a>
 <div class="container index">
   <br><br><br><br><br>
- <div class="row">
-  <div class="subNav">
-    <a href="/theGuide/theBlueprint">The Blueprint</a> |
-    <a href="/theGuide/discoveringOurData">Discovering Our Data</a> |
-    <a href="/theGuide/researchingOurPath">Researching Our Path</a> |
-    <a href="/theGuide/testFlight">Building our 1st Machine and Test Flight</a> |
-    <a href="/theGuide/optimizing">Optimizing Our Machine and Travelling Into Space</a><br/>
-  </div>
-  <div class = "feature">
-    <div class = "default">
-      <style>
-      svg {
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 10px;
-      }
-      </style>
+  <div class="row">
+    <div class="subNav">
+      <a href="/theGuide/theBlueprint">The Blueprint</a> |
+      <a href="/theGuide/discoveringOurData">Discovering Our Data</a> |
+      <a href="/theGuide/researchingOurPath">Researching Our Path</a> |
+      <a href="/theGuide/testFlight">Building our 1st Machine and Test Flight</a> |
+      <a href="/theGuide/optimizing">Optimizing Our Machine and Travelling Into Space</a><br/>
     </div>
-  </div>
-  <ng-include src="subPage" [onload=""]></ng-include>
+    <div class = "feature">
+      <div class = "default">
+        <style>
+          svg {
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 10px;
+          }
+        </style>
+      </div>
+    </div>
+    <ng-include src="subPage" [onload=""]></ng-include>
+    <div class="topLink">
+      <a href="#top" onclick="window.location.hash = hash;">Back To Top</a>
+    </div>
   </div>
 </div>
 

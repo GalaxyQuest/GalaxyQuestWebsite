@@ -4,6 +4,8 @@
 svg {
   font: 10px sans-serif;
   background: white;
+  border-radius:15px;
+  border: 1px solid black;
 }
 path, line {
   fill: none;

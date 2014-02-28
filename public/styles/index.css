@@ -76,6 +76,9 @@ path.link {
   text-align: center;
   font-size: 18px;
 }
+li{
+  font-size:18px;
+}
 .carousel-caption{
   text-shadow: 3px 3px 3px black;
   font-family: 'Lemon', cursive;
@@ -87,6 +90,7 @@ path.link {
 .chapterTitle {
   text-align: center;
   padding-bottom: 5px;
+  padding-top: 5px;
   background: -webkit-linear-gradient(#fff, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -158,6 +162,26 @@ path.link {
 }
 .fa {
   opacity: 0.8;
+}
+.dropdown {
+  display: none;
+  position:absolute;
+  height:30px;
+  width:220px;
+  border-radius: 5px;
+  background: rgba(61,74,89,0.9);
+  margin-top: -5px;
+  padding:3px;
+}
+.dropdownShow {
+  display: visible;
+}
+.subNav li{
+  display: inline-block;
+  font-size: 14px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: #2b3e50;
 }
 
 @keyframes animate {

@@ -42,7 +42,11 @@ svg {
               <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
               <div class='regression'>
               </div>
-              <button class="btn btn-primary" class="btn btn-primary" ng-click='drawLine()'>Find Linear Regression</button> <button class="btn btn-primary" ng-click='predictData()'>Predict New Data Output</button> <button class="btn btn-primary" ng-click='clearLine()'>Clear</button>
+              <div class="regression-btns">
+                <button class="btn btn-primary" class="btn btn-primary" ng-click='drawLine()'>Find Linear Regression</button> 
+                <button class="btn btn-primary" ng-click='predictData()'>Predict New Data Output</button> 
+                <button class="btn btn-primary" ng-click='clearLine()'>Clear</button>
+              </div>
             </div>
           </div>      
 
@@ -53,7 +57,11 @@ svg {
               <!-- <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
               <div class='classification'>
               </div>
-              <button class="btn btn-primary" ng-click='classify()'>Classify Data</button> <button class="btn btn-primary" ng-click='predictClass()'>Predict Class</button> <button class="btn btn-primary" ng-click='clearClassify()'>Clear</button>
+              <div class="classify-btns">
+                <button class="btn btn-primary" ng-click='classify()'>Classify Data</button> 
+                <button class="btn btn-primary" ng-click='predictClass()'>Predict Class</button> 
+                <button class="btn btn-primary" ng-click='clearClassify()'>Clear</button>
+              </div>
             </div>
             <div class="col-md-7">
               <h2 class="featurette-heading">Classification <span class="text-muted">Predicting a discrete valued output</span></h2>

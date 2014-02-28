@@ -4,6 +4,8 @@
 
 body {
   padding-bottom: 40px;
+  -webkit-backface-visibility: hidden;
+ 
   /*color: #5a5a5a;*/
   /*background-color: #ccc;*/
 }
@@ -61,14 +63,6 @@ path.link {
 .d3features {
   width: 90%;
 }
-.chart {
-  margin-top: 25px;
-  height: 340px;
-  border: 1px solid black;
-  padding: 15px;
-  background-color: white;
-  border-radius: 15px;
-}
 
 .subNav {
   text-align: center;
@@ -80,6 +74,7 @@ path.link {
 
 .lead, .featurette-heading {
   text-align: center;
+  font-size: 18px;
 }
 .carousel-caption{
   text-shadow: 3px 3px 3px black;
@@ -103,18 +98,27 @@ path.link {
 .btn-primary {
   border: 1px solid black;
   border-radius: 10px;
+  outline: 0;
 }
 .btn-primary:hover{
   border: 1px solid black;
 }
 .btn-primary:focus{
+  border: 1px solid black;
   outline: 0;
 }
 .btn-primary:active{
   outline:0;
+  border: 1px solid black;
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.classify-btns{
+  margin-left: 13%;
+}
+.regression-btns {
+  margin-left: -2%;
 }
 .galaxyClass {
   border: 1px solid black;
@@ -135,6 +139,7 @@ path.link {
 }
 .panel {
   border-radius: 15px;
+  box-shadow: 2px 2px 3px #333;
 }
 .panel-heading {
   border-top-left-radius: 15px;

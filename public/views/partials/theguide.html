@@ -1,31 +1,31 @@
 <a name="top"></a>
+
 <div class="container index"><br><br><br><br><br>
- <div class="row">
-  <div class="subNav">
-    <ul class="nav">
-      <li><a href="/theGuide/theBlueprint">The Blueprint</a></li> |
-      <li><a href="/theGuide/discoveringOurData">Discovering Our Data</a></li> |
-      <li><a href="/theGuide/researchingOurPath" class="one">Researching Our Path</a>
-         <ul class="dropdown">
-            <li><a href="/randomForestsVisual">Random Forest Visualization</a></li>
-            </ul>
-       </li> |
-      <li><a href="/theGuide/testFlight">Building our 1st Machine and Test Flight</a></li> |
-      <li><a href="/theGuide/optimizing">Optimizing Our Machine and Travelling Into Space</a></li><br/>
-    </ul>
-  </div>
-  <div class = "feature">
-          <ng-include src="subPage" [onload=""]></ng-include>
+   <div class="row">
+    <div class="subNav">
+      <ul class="nav">
+        <li><a href="/theGuide/ourOrigins">Our Origins</a></li> |
+        <li><a href="/theGuide/discoveringOurData">Discovering Our Data</a></li> |
+        <li><a href="/theGuide/researchingOurPath" class="one">Researching Our Path</a>
+           <ul class="dropdown">
+              <li><a href="/randomForestsVisual">Random Forest Visualization</a></li>
+              </ul>
+         </li> |
+        <li><a href="/theGuide/testFlight">Building our 1st Machine and Test Flight</a></li> |
+        <li><a href="/theGuide/optimizing">Optimizing Our Machine and Travelling Into Space</a></li><br/>
+      </ul>
+    </div>
+    <div class = "feature">
+            <ng-include src="subPage" [onload=""]></ng-include>
+      <div class = "default">
 
-    <div class = "default">
-
+      </div>
+    </div>
+    <div class="topLink">
+    <a href="#top" onclick="window.location.hash = hash;">Back To Top</a>
     </div>
   </div>
-  <div class="topLink">
-  <a href="#top" onclick="window.location.hash = hash;">Back To Top</a>
-  </div>
 </div>
-
 <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>
 <script src="../../styles/bootstrapIndexAssets-js/docs.min.js"></script>
 <script src="../../scripts/regression.js"></script>

@@ -1,3 +1,43 @@
+<script>
+  var tour = new Tour({
+  storage: false,
+  steps: [
+  {
+    element: ".carousel-caption",
+    title: "Welcome to Galaxy Quest!  Over a span of two weeks, we built a machine to classify galaxies.",
+    content: "We'd like to explain a few short things first, but if you'd like to explore on your own, you can always exit the tour!"
+  },
+  {
+    element: "#step-two",
+    title: "This galaxy is our input to the machine algorithm",
+    content: "Our algorithm will analyze the image to the left and produce a classification for us."
+  },
+  {
+    element: "#step-three",
+    placement: 'top',
+    title: "These are the results the algorithm gives us back",
+    content: "The results reflect the percent likelihood that a galaxy is of a certain type"
+  },
+  {
+    element: "#step-four",
+    placement:  'bottom',
+    title: 'Change the picture!',
+    content: 'Click the button to give the algorithm another galaxy to classify.  Watch the percentages to the right change!'
+  },
+  {
+    element:"#step-five",
+    placement: 'bottom',
+    title: 'Last stop on our tour- The Guide',
+    content: 'We put together some helpful information to get you started on making your own Galaxy Classifier.  Thanks for visiting!'
+  }
+]});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();
+</script>
 <div class = "all" ng-controller='MainController' ng-app="galaxyApp">
  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=3000>
       <!-- Indicators -->
@@ -26,18 +66,18 @@
       <div class="row galaxyClass">
         <div class="col-md-5">
           <div class="panel-heading" style="border-radius: 15px">
-            <h2 class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
+            <h2 id="step-two" class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
           </div>
           <img class="img-responsive img-rounded galaxy" style="width: 500px"ng-src="{{galaxyURL}}">
           <div class="col-md-3 col-md-offset-4"><br> 
-            <button ng-click="nextGalaxy();" type="button" class="btn btn-primary">Input Next Galaxy</button> 
+            <button ng-click="nextGalaxy();" type="button" id="step-four" class="btn btn-primary">Input Next Galaxy</button> 
           </div>
         </div>
         <div class="col-md-7">
             <div class="panel panel-default">
               <!-- Default panel contents -->
-              <div class="panel-heading " style="background-color : #101010; text-shadow: 3px 3px 3px #333333;">
-                <h2 class="text-info text-center" style="color: #FFFFFF">Algorithm Outputs</h2>
+              <div class="panel-heading" style="background-color : #101010; text-shadow: 3px 3px 3px #333333;">
+                <h2 id="step-three" class="text-info text-center" style="color: #FFFFFF">Algorithm Outputs</h2>
               </div>
               <!-- Table -->
               <table class="table text-center" style="color: #FFFFFF;">

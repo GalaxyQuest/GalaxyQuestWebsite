@@ -83,6 +83,7 @@ path.link {
 }
 .carousel-caption{
   text-shadow: 3px 3px 3px black;
+  font-family: 'Lemon', cursive;
 }
 .carousel-inner{
   border-radius: 5px;
@@ -102,6 +103,18 @@ path.link {
 .btn-primary {
   border: 1px solid black;
   border-radius: 10px;
+}
+.btn-primary:hover{
+  border: 1px solid black;
+}
+.btn-primary:focus{
+  outline: 0;
+}
+.btn-primary:active{
+  outline:0;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .galaxyClass {
   border: 1px solid black;
@@ -129,7 +142,7 @@ path.link {
   background-color: #101010; 
   text-shadow: 3px 3px 3px #333333;
 }
-.team {
+.team, .featurette-image {
   border-radius: 15px;
   border: 1px solid gray;
   box-shadow: 2px 2px 3px #333;
@@ -138,6 +151,48 @@ path.link {
   border: 1px solid gray;
   box-shadow: 2px 2px 3px #333;
 }
+.fa {
+  opacity: 0.8;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.7;
+  transform: scale(0.8,0.8);
+  -ms-transform: scale(0.8,0.8);
+  -webkit-transform: scale(0.8,0.8);
+
+  }
+  100% {
+  opacity: 1;
+  transform: scale(1.3,1.3);
+  -ms-transform: scale(1.3,1.3);
+  -webkit-transform: scale(1.3,1.3);
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0.7;
+      transform: scale(0.8,0.8);
+  -ms-transform: scale(0.8,0.8);
+  -webkit-transform: scale(0.8,0.8);
+  }
+  100% {
+  opacity: 1;
+  transform: scale(1.3,1.3);
+  -ms-transform: scale(1.3,1.3);
+  -webkit-transform: scale(1.3,1.3);
+  }
+}
+
+.fa:hover{
+  animation: animate 1s;
+  -webkit-animation: animate 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
 
 
 

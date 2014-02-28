@@ -7,20 +7,31 @@
 <div class="content">
   <visualization>
     <div class = "d3features">
+      <h2>How Random Forests Work</h2>
       <features> 
-        <div class = "text">
+        <div class = "text"><h4>
            All machine learning algorithms take inputs that describe the data we are trying to analyze. These descriptors are often called input "features". A Random Forests machine learning algorithm will build decision trees based on these features.  At each node along the tree, a decision is made.  The tree will then select a new set of features to make a decision, again at random, until the maximum depth of the tree is reached.  The user can set this maximum value or let the tree exhaust all possibilities on its own.
-      </div>
+      </h4></div>
       </features>
     </div>
     <random-forest>
-      <div class = "text">
-        The user can specify the number of trees the algorithm will make. The first feature and solution set stimulates the creation of the full tree set (the Random Forests). Further feature/solution sets will refine this forest of decision trees to make more accurate predictions.
-      </div>
+      <div class = "text"><h4>
+        The user can specify the number of trees the algorithm will make. The first feature and solution set stimulates the creation of the full tree set (the Random Forests). Additional feature/solution sets will refine this forest of decision trees to make more accurate predictions.
+      </h4></div>
     </random-forest>
-    <div class = "text">
-      Each trained decision tree alone is a weak estimator. This means that a single decision tree has little predictive power.  It also means that each tree can vary wildly in its prediction.  This difference in their predictions is called variance.  When many (often thousands or more) of these weak estimators results are combined, we are given a surprisingly accurate prediction.  This is done through a process called bootstrapped aggregation.
-
-      We chose to use the Random Forests machine learning algorithm for its ease of use and high accuracy. There are many things about Random Forests that make them easy to use relative to other machine learning algorithms. One major factor is that overfitting is less of a problem with Random Forests compared to other machine learning algorithms. This is the case for myriad reasons, including the random nature of the trees and using bagging rather than boosting for aggregation. Another reason Random Forests are easier to use compared to other machine learning algorithms is that there is no need to use a cross-validation set to test the generalization error of Random Forests. //This is because the Random Forests algorithm uses the unused features discussed above to calculate generalization error of the model it is building on the fly.//
+    <div class = "text"><h4>
+      Each trained decision tree alone is a weak estimator. This means that a single decision tree has little predictive power.  It also means that each tree can vary widely in its prediction.  This difference in their predictions is called variance.  When many (often thousands or more) of these weak estimators' results are combined, we are given a surprisingly accurate prediction.  This is done through a process called bootstrapped aggregation.
+</h4></div>
+<h4 class="text-info">Why Random Forests?</h4>
+<div class="text"><h4>
+      We chose to use the Random Forests machine learning algorithm for its ease of use and high accuracy. There are many things about Random Forests that make them easy to use relative to other machine learning algorithms.
+</h4></div>
+<div class="text"><h4>
+       One major factor is that overfitting is less of a problem with Random Forests compared to other machine learning algorithms. This is the case for myriad reasons, including the random nature of the trees and using bagging rather than boosting for aggregation. 
+</h4></div>
+<div class="text">
+  <h4>
+       Another reason Random Forests are easier to use compared to other machine learning algorithms is that there is no need to use a cross-validation set to test the generalization error of Random Forests. //This is because the Random Forests algorithm uses the unused features discussed above to calculate generalization error of the model it is building on the fly.//
+     </h4>
     </div>
   </div>

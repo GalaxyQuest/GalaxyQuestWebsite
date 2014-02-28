@@ -4,10 +4,9 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
-  background-color: #ccc;
+  /*color: #5a5a5a;*/
+  /*background-color: #ccc;*/
 }
-
 .col-lg-4 {
   text-align: center;
 }
@@ -88,6 +87,58 @@ path.link {
 .carousel-inner{
   border-radius: 5px;
 }
+
+.chapterTitle {
+  text-align: center;
+  padding-bottom: 5px;
+  background: -webkit-linear-gradient(#fff, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hypothesis{
+  text-align: center;
+}
+.btn-primary {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.galaxyClass {
+  border: 1px solid black;
+  padding: 15px;
+  margin-left: 2%;
+  background-color: #878991;
+  width: 95%;
+  border-radius: 15px;
+}
+.index {
+  width: 95%;
+}
+.galaxy {
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
+}
+.panel {
+  border-radius: 15px;
+}
+.panel-heading {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #101010; 
+  text-shadow: 3px 3px 3px #333333;
+}
+.team {
+  border-radius: 15px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
+}
+.img-circle {
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px #333;
+}
+
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -192,12 +243,10 @@ path.link {
   }
 
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
+/*
     padding-right: 15px;
-    padding-left:  15px;
+    padding-left:  15px;*/
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
@@ -222,7 +271,7 @@ path.link {
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
+  /*.featurette-heading {
     margin-top: 120px;
-  }
+  }*/
 }

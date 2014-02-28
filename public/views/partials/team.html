@@ -12,12 +12,12 @@
         <h2 class="heading pull-left">Hack Reactor Machine Learning Team</h2>
         <h4 class="pull-left">Members from the January 2014 Cohort</h4><br>
         <ul class="pull-left">
-          <li><a href="#scott">Scott</a>, Team Project Manager</li>
-          <li><a href="#jeanette">Jeanette</a></li>
-          <li><a href="#sonali">Sonali</a></li>
-          <li><a href="#charles">Charles</a></li>
-          <li><a href="#kwyn">Kwyn</a></li>
-          <li><a href="#vinnie">Vinnie</a></li>
+          <li><a class="names" href="#scott">Scott</a>, Team Project Manager</li>
+          <li><a class="names" href="#jeanette">Jeanette</a></li>
+          <li><a class="names" href="#sonali">Sonali</a></li>
+          <li><a class="names" href="#charles">Charles</a></li>
+          <li><a class="names" href="#kwyn">Kwyn</a></li>
+          <li><a class="names" href="#vinnie">Vinnie</a></li>
         <ul>
       </div>
       <div class="col-md-8">
@@ -150,7 +150,10 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function() {
-   $('.jumbotron').localScroll({duration:800});
+  $('.names').on('click', function(e){
+    e.preventDefault();
+    $('.jumbotron').localScroll({duration:800}) ;
+  });
 });
 </script>
 

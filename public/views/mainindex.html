@@ -1,6 +1,14 @@
 <script>
   var tour = new Tour({
   storage: false,
+  onStart: function(tour) {
+    $('a').on('click', function(e) {
+      e.preventDefault();
+    });
+  },
+  onEnd: function(tour) {
+    $('a').unbind('click');
+  },
   steps: [
   {
     element: ".carousel-caption",
@@ -38,6 +46,7 @@ tour.init();
 
 // Start the tour
 tour.start();
+
 </script>
 <div class = "all" ng-controller='MainController' ng-app="galaxyApp">
  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=3000>

@@ -197,7 +197,9 @@ path.link {
   -webkit-animation-fill-mode: forwards;
 }
 
-
+.topLink{
+  text-align: center;
+}
 
 
 

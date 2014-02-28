@@ -175,6 +175,10 @@ li{
 .fa {
   opacity: 0.8;
 }
+.floatRight{
+  display:block;
+  float:right;
+}
 .dropdown {
   display: none;
   position:absolute;

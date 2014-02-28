@@ -13,30 +13,30 @@
   {
     element: ".carousel-caption",
     placement: 'top',
-    title: "Welcome to Galaxy Quest!  Over a span of two weeks, we built a machine to classify galaxies.",
-    content: "We'd like to explain a few short things first, but if you'd like to explore on your own, you can always exit the tour!"
+    title: "Welcome to Galaxy Quest!",
+    content: "We've built a machine learning algorithm, and we'd love to share our findings with you!"
   },
   {
     element: "#step-two",
-    title: "This galaxy is our input to the machine algorithm",
-    content: "Our algorithm will analyze the image to the left and produce a classification for us."
+    title: "Interact With Our Machine",
+    content: "Our algorithm analyzes these images and produces a classification for us."
   },
   {
     element: "#step-three",
-    placement: 'top',
-    title: "These are the results the algorithm gives us back",
-    content: "The results reflect the percent likelihood that a galaxy is of a certain type"
+    placement: 'left',
+    title: "Checkout Our Results!",
+    content: "These results reflect our algorithm's classification (our algorithm actually outputs 37 total classifications!)"
   },
   {
     element: "#step-four",
     placement:  'bottom',
-    title: 'Change the picture!',
-    content: 'Click the button to give the algorithm another galaxy to classify.  Watch the percentages to the right change!'
+    title: 'Change The Picture!',
+    content: 'Click here to give the algorithm another galaxy to classify. Watch the results change!'
   },
   {
     element:"#step-five",
     placement: 'bottom',
-    title: 'Last stop on our tour- The Guide',
+    title: 'Last Stop - The Guide',
     content: 'We put together some helpful information to get you started on making your own Galaxy Classifier.  Thanks for visiting!'
   }
 ]});
@@ -63,15 +63,15 @@ tour.start();
           </div>
         </div>
       </div>
+    <div class="examineMachine">
+      <h2>Interact with our Galaxy Classifying Machine</h2>
+    </div>
   </div>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
   <div class="container index">
-    <div class="chapterTitle">
-      <h2>Interact with our Galaxy Classifying Machine</h2>
-    </div>
     <div class="content galaxyclass" ng-controller='GalaxyClassController'>
       <div class="row galaxyClass">
         <div class="col-md-5">
@@ -139,7 +139,7 @@ tour.start();
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; Hack Reactor Inc &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; Created at Hack Reactor Inc - Cohort 9 &middot;</p>
       </footer>
 
     </div><!-- /.container -->

@@ -16,7 +16,11 @@ var galaxyApp = angular.module('galaxyApp', ['ngRoute'])
       })
       .when('/theGuide', {
         templateUrl: '../views/partials/theguide.html',
-        //controller: do we need something here?
+        controller: 'GuideController'
+      })
+      .when('/theGuide/:subpage', {
+        templateUrl: '../views/partials/theguide.html',
+        controller: 'GuideController'
       })
       .when('/scatter', {
         templateUrl: '../views/partials/scatter.html',

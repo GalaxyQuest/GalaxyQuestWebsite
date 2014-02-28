@@ -1,4 +1,5 @@
 <a name="top"></a>
+<div class="container index"><br><br><br><br><br>
  <div class="row">
   <div class="subNav">
     <ul class="nav">
@@ -14,18 +15,15 @@
     </ul>
   </div>
   <div class = "feature">
+          <ng-include src="subPage" [onload=""]></ng-include>
+
     <div class = "default">
-      <style>
-      svg {
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 10px;
-      }
-      </style>
+
     </div>
   </div>
   <div class="topLink">
   <a href="#top" onclick="window.location.hash = hash;">Back To Top</a>
+  </div>
 </div>
 
 <script src="../../styles/bootstrapDist/js/bootstrap.min.js"></script>

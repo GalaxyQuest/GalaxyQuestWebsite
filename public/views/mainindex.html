@@ -1,6 +1,7 @@
 <script>
+
   var tour = new Tour({
-  storage: false,
+  storage: window.localStorage,
   onStart: function(tour) {
     $('a').on('click', function(e) {
       e.preventDefault();
@@ -19,7 +20,7 @@
   },
   {
     element: "#step-four",
-    title: "Click Me!",
+    title: "Classify Another Galaxy!",
     content: "Our algorithm analyzes these images and produces a classification for us."
   },
   {

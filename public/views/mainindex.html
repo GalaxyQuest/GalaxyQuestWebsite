@@ -74,16 +74,16 @@ tour.start();
   <div class="container index">
     <div class="content galaxyclass" ng-controller='GalaxyClassController'>
       <div class="row galaxyClass">
-        <div class="col-md-5">
-          <div class="panel-heading" style="border-radius: 15px">
-            <h2 id="step-two" class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
+        <div class="col-md-5 span9" style="width: 400px;">
+          <div class="panel-heading" style="width: 80%; border-radius: 15px;  margin-left: 10%">
+            <h2 class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
           </div>
-          <img class="img-responsive img-rounded galaxy" style="width: 500px"ng-src="{{galaxyURL}}">
-          <div class="col-md-3 col-md-offset-4"><br> 
-            <button ng-click="nextGalaxy();" type="button" id="step-four" class="btn btn-primary">Input Next Galaxy</button> 
+          <img class="img-responsive img-rounded galaxy" style="margin-left: 10%; width: 300px" ng-src="{{galaxyURL}}">
+          <div><br> 
+            <button ng-click="nextGalaxy();" type="button" class="btn btn-primary">Input Next Galaxy</button> 
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 span3">
             <div class="panel panel-default">
               <!-- Default panel contents -->
               <div class="panel-heading" style="background-color : #101010; text-shadow: 3px 3px 3px #333333;">
@@ -92,19 +92,24 @@ tour.start();
               <!-- Table -->
               <table class="table text-center" style="color: #FFFFFF;">
                 <tr>
-                  <th class="text-center"><h3> Classification </h3></th>
-                  <th class="text-center"><h3> Percent likelihood </h3></th>
+                  <th class="text-center"><h4> Classification </h4></th>
+                  <th class="text-center"><h4> Percent likelihood </h4></th>
                 </tr>
                 <tr >
-                  <td style="vertical-align: middle;"><img src="../../images/Smooth.png" /><h5> Smooth </h5></td>
+                  <td style="vertical-align: middle;"><img src="../../images/Smooth.png" style="width: 75px"/>
+                    <div style="font-size:15px">Smooth</div>
+                  </td>
                   <td style="vertical-align: middle;"><h2> {{class1_1}} % </h2></td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: middle;"> <img src="../../images/FeaturesOrDisk.png" /><h5> Features or disk </h5></td>
+                  <td style="vertical-align: middle;"> <img src="../../images/FeaturesOrDisk.png" style="width: 75px"/>
+                    <div style="font-size:15px">Features or disk</div>
+                  </td>
                   <td style="vertical-align: middle;"><h2> {{class1_2}} % </h2></td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: middle;"> <img src="../../images/StarOrArtifcat.png" /><h5> Star or artifact </h5></td>
+                  <td style="vertical-align: middle;"> <img src="../../images/StarOrArtifcat.png" style="width: 75px"/>
+                    <div style="font-size:15px; margin-bottom: 10px;">Star or artifact</div>
                   <td style="vertical-align: middle;"><h2> {{class1_3}} % </h2></td>
                 </tr>
                 <tr> </tr>

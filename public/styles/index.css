@@ -1,4 +1,4 @@
-/* GLOBAL STYLES
+  /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
@@ -142,12 +142,12 @@ li{
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .galaxyClass {
-  border: 1px solid black;
   padding: 15px;
   margin-left: 2%;
-  background-color: #878991;
-  width: 95%;
+  width: 1000px;
+  margin: 0 auto;
   border-radius: 15px;
+  text-align: center;
 }
 .index {
   width: 95%;

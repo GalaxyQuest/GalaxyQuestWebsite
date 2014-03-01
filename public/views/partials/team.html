@@ -151,8 +151,8 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $('.names').on('click', function(e){
+    $('.jumbotron').localScroll({duration:800});
     e.preventDefault();
-    $('.jumbotron').localScroll({duration:800}) ;
   });
 });
 </script>

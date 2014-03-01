@@ -1,9 +1,8 @@
 {
   "name": "MEAN-basic-boilerplate",
   "version": "0.0.0",
-  "homepage": "https://github.com/deini/MEAN-basic-boilerplate",
   "authors": [
-    "Daniel Almaguer <danielalmaguer@gmail.com>"
+    "Scott Zhang <scottzhang235@gmail.com>"
   ],
   "main": "app.js",
   "license": "MIT",
@@ -19,8 +18,7 @@
     "angular-route": "~1.2.12",
     "d3": "~3.4.2",
     "jquery": "~2.1.0",
-    "c3": "~0.1.12",
-    "jquery.localScroll": "~1.3.5"
+    "c3": "~0.1.12"
   },
   "resolutions": {
     "d3": "~3.4.2"

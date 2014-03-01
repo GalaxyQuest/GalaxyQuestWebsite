@@ -1,6 +1,7 @@
 <script>
+
   var tour = new Tour({
-  storage: false,
+  storage: window.localStorage,
   onStart: function(tour) {
     $('a').on('click', function(e) {
       e.preventDefault();

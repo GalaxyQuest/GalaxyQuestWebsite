@@ -11,14 +11,15 @@
   },
   steps: [
   {
-    element: "#step-one",
-    placement: 'left',
+    orphan: true,
+    backdrop: true,
+    placement: 'top',
     title: "Welcome to Galaxy Quest!",
     content: "We've built a machine learning algorithm, and we'd love to share our findings with you!"
   },
   {
-    element: "#step-two",
-    title: "Interact With Our Machine",
+    element: "#step-four",
+    title: "Click Me!",
     content: "Our algorithm analyzes these images and produces a classification for us."
   },
   {
@@ -26,12 +27,6 @@
     placement: 'left',
     title: "Checkout Our Results!",
     content: "These results reflect our algorithm's classification (our algorithm actually outputs 37 total classifications!)"
-  },
-  {
-    element: "#step-four",
-    placement:  'bottom',
-    title: 'Change The Picture!',
-    content: 'Click here to give the algorithm another galaxy to classify. Watch the results change!'
   },
   {
     element:"#step-five",
@@ -80,7 +75,7 @@ tour.start();
           </div>
           <img class="img-responsive img-rounded galaxy" style="margin-left: 10%; width: 300px" ng-src="{{galaxyURL}}">
           <div><br> 
-            <button id="step-four"ng-click="nextGalaxy();" type="button" class="btn btn-primary">Input Next Galaxy</button> 
+            <button id="step-four"ng-click="nextGalaxy();" type="button" class="btn btn-primary">Classify Next Galaxy</button> 
           </div>
         </div>
         <div class="col-md-7 span3">

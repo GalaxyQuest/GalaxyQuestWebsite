@@ -11,8 +11,8 @@
   },
   steps: [
   {
-    element: ".carousel-caption",
-    placement: 'top',
+    element: "#step-one",
+    placement: 'left',
     title: "Welcome to Galaxy Quest!",
     content: "We've built a machine learning algorithm, and we'd love to share our findings with you!"
   },
@@ -56,7 +56,7 @@ tour.start();
           <img src="../images/bluegalaxy.jpg">
           <div class="container">
             <div class="carousel-caption">
-              <h2 class="title">Guidelines for Applying your Machine Learning Algorithm</h2>
+              <h2 id="step-one"class="title">Guidelines for Applying your Machine Learning Algorithm</h2>
               <h3>"A Hitchhikers Guide to Classifying Galaxies"</h3>
               <a class="btn btn-lg btn-primary" href="#/theGuide" role="button">View Now</a>
             </div>
@@ -76,11 +76,11 @@ tour.start();
       <div class="row galaxyClass">
         <div class="col-md-5 span9" style="width: 400px;">
           <div class="panel-heading" style="width: 80%; border-radius: 15px;  margin-left: 10%">
-            <h2 class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
+            <h2 id="step-two" class="text-info text-center" style="color: #FFFFFF">Algorithm Inputs</h2>
           </div>
           <img class="img-responsive img-rounded galaxy" style="margin-left: 10%; width: 300px" ng-src="{{galaxyURL}}">
           <div><br> 
-            <button ng-click="nextGalaxy();" type="button" class="btn btn-primary">Input Next Galaxy</button> 
+            <button id="step-four"ng-click="nextGalaxy();" type="button" class="btn btn-primary">Input Next Galaxy</button> 
           </div>
         </div>
         <div class="col-md-7 span3">
